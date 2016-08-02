@@ -1,3 +1,5 @@
+'use strict'
+(function(){
 var luckyNumber = Math.floor(Math.random()*6)
 
 var No1 = .10; 
@@ -73,3 +75,4 @@ switch (luckyNumber) {
 		console.log("December");
 		break;
 }
+})();
