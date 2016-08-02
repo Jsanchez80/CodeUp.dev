@@ -1,4 +1,4 @@
-//1. 
+(function(){//1. 
 var string
 
 for(var i = 1; i <= 10; i ++){
@@ -57,3 +57,4 @@ if	var number = No - 5;
 for (var i = 100; i >5; i-=5){
 	console.log(i)
 }
+})();
