@@ -2,68 +2,18 @@
 	<html lang="en">
 		<head>
 			<meta charset="utf-8">
-			<title>The Definitive Guide to Food in SA</title>
-			<link rel="stylesheet" href="/google_maps_api.css">>
-				<style type="text/css">
-				#map-canvas {
-				 width: 770px;
-				height: 481px;
-			}
-				</style>
+			<title>Gud Food</title>
+			<link rel="stylesheet" href="/google_maps_api.css">
+			<link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
 		</head>
 		<body>
-		<div id="map-canvas"></div>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL9fGEKNmku3pZ7PFKdfrytY1AHqY_hu8"></script>
-		<script type=text/javascript>
-			(function() {
-			"use strict";
+			<div id="map-canvas"></div>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL9fGEKNmku3pZ7PFKdfrytY1AHqY_hu8"></script>
+			<script src="google_maps_api.js"></script>
+			<h1> Hella Gud Food!</h1>
+			<hr color="salmon">
+			<p><h4>I've trekked the US to find the best of the best in food and entertainment.  I hope this page will give you some idea of local eateries within the US that I find uber delicious.  Feel free to take a look around and if you have any suggestions, please feel free to contact me.</h4></p>
 
-		// Set the map options
-				var mapOptions = {
-					// Set the zoom level
-					zoom: 19,
-
-					// This sets the center of the map at our location
-					center: {
-						lat:  29.426791, //29.5195728 coordinates for my fave restaurant(lat)
-						lng: -98.489602  //-98.5046304 coordinates for my fave restaurant(long)
-					}
-				};
-
-				// Draw/display your map
-				var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-			})();
-
-/*
-			var geocoder = new google.maps.Geocoder();
-				//The Geocoder object has a method .geocode.
-
-			geocode(request:GeocoderRequest, callback:function(Array.<GeocoderResult>, GeocoderStatus){
-
-			}
-  				// Include code from previous example
-
-					// Set the address of your favorite resturaunt (in San Antonio) to geocode
-		var address = "602 NW Loop 410  Suite #146, San Antonio, TX 78216";
-
-					// Init geocoder object
-			var geocoder = new google.maps.Geocoder();
-
-					// Geocode our address
-			geocoder.geocode({ "602 NW Loop 410, Suite #146, San Antonio, TX 78216": address }, function(results, status) {
-
-			   		// Check for a successful result
-			   if (status == google.maps.GeocoderStatus.OK) {
-
-				   // Recenter the map over the address
-					map.setCenter(results[0].geometry.location);
-			   } else {
-
-				   // Show an error message with the status if our request fails
-				   alert("Geocoding was not successful - STATUS: " + status);
-			   }
-			});
-*/
-		</script>
 		</body>
 	</html>
