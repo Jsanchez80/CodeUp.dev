@@ -1,0 +1,8 @@
+body{
+	background-image: url("doodles1.jpg");
+}
+
+#map-canvas{
+
+	border: 5px solid salmon;
+    }
