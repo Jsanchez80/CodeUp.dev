@@ -1,0 +1,14 @@
+#my-map {
+        width: 750px;
+        height: 500px;
+        border: 1px solid black;
+        margin: 1.5em 0;
+        }
+
+button {
+        margin: 0 10px;
+        background: navy;
+        color: white;
+        padding: 10px 15px;
+        font-size: 1.3em;
+        }
