@@ -1,0 +1,35 @@
+body{
+	background-image: url("doodles1.png");
+}
+
+h1{
+	font-family: 'Lato', sans-serif;
+  	color: #ff8080;
+}
+
+h4{
+	font-family: 'Lato';
+    color: #ff8080;
+	
+}
+li{
+	font-size: 10px;
+	color: #ff8080;
+}
+
+/*#map-canvas{
+	width: 600px;
+	height: 400px;
+	border: 5px solid salmon;
+  
+	}*/
+
+#hellaHaute{
+	border-style: solid;
+    border-width: 5px;
+	color: black;
+}
+
+.important{
+	color: black;
+}
