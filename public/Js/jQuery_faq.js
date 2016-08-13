@@ -41,6 +41,23 @@ grab the ul, for each ul, seek the parent ul and find each li and change style t
 >	$(this).parent('ul').each('li').css('.invisible');
 }
 */
+/*
 $('li').click(function(){
 	$(this).parent().addClass("alto")
+});*/
+
+$('dt').click(function() {
+    $(this).next().toggle();
+});
+
+//maket the first li element in each ul have font-weight: bold.
+$('ul').each(function(index,element){
+    $(this).children().first().css('font-weight', 'bold');
+});
+
+//add the .invisible class on the paren ul of any li that is clicked.
+$('h3').click(function() {
+    //(this).parent().addClass("invisible");
+   // $(this).parent()children('ul').children('li').slideToggle();
+    $(this).next().slideToggle();
 });
