@@ -31,7 +31,7 @@
         ],
         "price": 10
     }, {
-        "title": "Dewalt Cordless Power Saw",
+        "title": "Dewalt  6\" Cordless Power Saw",
         "quantity": 20,
         "categories": [
             "tool",
@@ -46,7 +46,92 @@
             " powered"
         ],
         "price": 225
-    }
-
-
-]
+    }, {
+        "title": "Dewalt Cordless Sheetrock Drill",
+        "quantity": 10,
+        "categories": [
+            "tool",
+            " powered"
+        ],
+        "price": 199
+    }, {
+        "title": "Dewalt 12\" Cordless Miter Saw",
+        "quantity": 25,
+        "categories": [
+            "tool",
+            " powered"
+        ],
+        "price": 299
+    }, {
+        "title": "Dewalt 6\" Orbital Sander",
+        "quantity": 15,
+        "categories": [
+            "tool",
+            " powered"
+        ],
+        "price": 65
+    }, {
+        "title": "Dewalt 6\" Torpedo Level",
+        "quantity": 10,
+        "categories": [
+            "tool",
+            "hand"
+        ],
+        "price": 65
+    }, {
+        "title": "Dewalt Auto Load Knife",
+        "quantity": 10,
+        "categories": [
+            "tool", 
+            "hand"
+        ],
+        "price": 25
+    }, {
+        "title": "Dewalt 1/4\" Hex Nut Driver",
+        "quantity": 10,
+        "categories": [
+            "tool", 
+            "hand"
+        ],
+        "price": 7
+    }, {
+         "title": "Dewalt 1/2\" Hex Nut Driver",
+        "quantity": 15,
+        "categories": [
+            "tool",
+            "hand"
+        ],
+        "price": 7
+    }, {
+         "title": "Dewalt 3/4\" Hex Nut Driver",
+        "quantity": 25,
+        "categories": [
+            "tool",
+            "hand"
+        ],
+        "price": 7
+    }, {
+         "title": "Dewalt 1\" Hex Nut Driver",
+        "quantity": 30,
+        "categories": [
+            "tool",
+            "hand"
+        ],
+        "price": 7
+}, {
+    "title": "Est Wing Cat Claw/Nail Puller",
+        "quantity": 10,
+        "categories": [
+            "tool",
+            "hand"
+        ],
+        "price": 20
+}, {
+    "title": "Est Wing Pro Claw RSC(3 in 1)",
+        "quantity": 10,
+        "categories": [
+            "tool", 
+            "hand"
+        ],
+        "price": 15
+}
