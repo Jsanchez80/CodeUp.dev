@@ -4,10 +4,9 @@
     <title>Online Store</title>
 </head>
 <body>
-
-<h1>My Tool Store</h1>
-
-<table id="products">
+    <h1>My Tool Store</h1>
+    <button id="ref_butn">Refresh!</button>
+    <table id="products">
     <thead>
         <tr>
             <th>Title</th>
@@ -17,36 +16,32 @@
         </tr>
     </thead>
     <tbody id="insertProducts"></tbody>
-</table>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>       
+    <script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-<script>
-(function() {
-    "use strict";
+        (function() {
+        "use strict";
+                
     // TODO: Create an ajax GET request for /data/inventory.json
         $.ajax("/data/inventory.json").done(function(data){//what is the task? Use an Ajax Request to obtain data and create a callback ".done" function
-                console.log(data) // console log to ensure you're data is being captured
-                var inventory = ""; //declare a variable that your function can use and interpret
-                $(data).each(function(index){//what are you trying to display? a table <tr> and <th> with content for each list item: ref lines 12-17: this is how you want your data to display
+            console.log(data) // console log to ensure you're data is being captured
+            var inventory = ""; //declare a variable that your function can use and interpret
+            $(data).each(function(index){//what are you trying to display? a table <tr> and <th> with content for each list item: ref lines 12-17: this is how you want your data to display
                 inventory +='<tr>' //this is the beginning of your table
                 inventory +='<td>' + this.title + '</td>'; //these are elements within your table
                 inventory +='<td>' + this.quantity + '</td>';
                 inventory +='<td>' + this.price + '</td>';
                 inventory +='<td>' + this.categories + '</td>';
                 inventory +='</tr>'  //this is where you close your table
-                }) 
+            }) 
                 console.log(inventory); //you want to make sure you are getting data in the format you just coded: this will also act as a check and balance for your display
                 $('#insertProducts').html(inventory) //Now input your data into the <tbody id> using reference of # ex ('#insertProducts') into the HTML (.html) and source your variables(inventory)
-        });//By completing this function, you can continue to add unlimited data to your table without having to re-write code. You can add data to your table by adding on to your JSON file. 
-
-    // TODO: Take the data from inventory.json and append it to the products table
-    // HINT: Your data should come back as a JSON object; use console.log() to inspect
-    // its contents and fields
-    // HINT: You will want to target #insertProducts for your new HTML elements
-          
-
-    
+                });//By completing this function, you can continue to add unlimited data to your table without having to re-write code. You can add data to your table by adding on to your JSON file. 
+                 $("#ref_butn").click(function(index) {
+                    location.reload("/data/inventory.json");
+                    alert("New Product's Were Just Added!")
+        });     
 })();
 </script>
 
