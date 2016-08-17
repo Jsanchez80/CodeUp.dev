@@ -2,22 +2,30 @@
 /* table styling for the output in HTML*/
  table{
     font-family:'Lato', sans-serif;
-    border-collapse: collapse;
+    border:none;
     width: 25%;
 }
 
+h3{
+   font-family: 'Lato', sans-serif;
+   color: #708090;
+   padding: 5px;
+   margin: 10px;
+}
+
 td, th {
-    border: 1px solid #dddddd;
+    border: 0px solid #dddddd;
     text-align: left;
+    font-style: italic;
     padding: 8px;
 }
 
 tr:nth-child(even) {
     background-color: #dddddd;
 }
-/*body {
+
+body {
   background-image: url("/img/concrete_wall/concrete_wall.png");
-  
 }
 
 .container {
@@ -26,27 +34,15 @@ background-image: url("/img/maze/maze.png");
 -moz-border-radius: 0px 0px 13px 13px;
 border-radius: 0px 0px 13px 13px;
 font-family: 'Lato', sans-serif;
-float: top;
-height: 600px;
-width:1430px
+float: left;
+height: 50px;
+width: 1425px;
 padding: 0px;
-clear: all;
+-webkit-box-shadow: -2px 1px 7px 0px rgba(141,141,217,1);
+-moz-box-shadow: -2px 1px 7px 0px rgba(141,141,217,1);
+box-shadow: -2px 1px 7px 0px rgba(141,141,217,1);
 
 }
-
-.content {
-  background-color: #000000;
-  -webkit-border-radius: 13px;
-  -moz-border-radius: 13px;
-  border-radius: 13px;
-  font-family: 'Lato', sans-serif;
-  float:left;
-  margin: 10px;
-  padding:10px;
-  height: 300px;
-  width: 400px;
-
-} 
 
 .box1 {
   background-image: url("/img/maze/maze.png");
@@ -56,11 +52,14 @@ clear: all;
   font-family: 'Lato', sans-serif;
   float:left;
   margin: 10px;
-  padding:10px;
-  height: 300px;
-  width: 300px;
-
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+  -webkit-box-shadow: -2px 1px 7px 0px rgba(141,141,217,1);
+  -moz-box-shadow: -2px 1px 7px 0px rgba(141,141,217,1);
+  box-shadow: -2px 1px 7px 0px rgba(141,141,217,1);
 }
+/*
 
 .box2 {
   background-image: url("/img/maze/maze.png");
@@ -71,8 +70,8 @@ clear: all;
   float:left; 
   margin: 10px;
   padding:10px;
-  height: 300px;
-  width:300px;
+  height: 200px;
+  width:200px;
 
 }
 
@@ -82,14 +81,12 @@ clear: all;
   -moz-border-radius: 13px;
   border-radius: 13px;
   font-family: 'Lato', sans-serif;
-  float:left;
+  float: left;
   margin: 10px;
   padding:10px;
-  height: 300px;
-  width:300px;
+  height: 200px;
+  width:200px;
   
-}
 }*/
+
 /* box radius' were made at www.cssround.com */
-
-
