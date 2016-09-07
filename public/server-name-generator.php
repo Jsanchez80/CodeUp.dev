@@ -18,16 +18,34 @@ $adjectiveArray = array("grand", "delicate", "woven", "soft", "light", "cool", "
 // 3.  Create a function that will return a random element from an array.
 //////////////////////////////////////////////////////////////////////////////////
 
-	function getServerName($adjective) {
+	function getServerName() {
 		$adjectiveArray = array("grand", "delicate", "woven", "soft", "light", "cool", "heavy", "bold", "electric", "radiant", "dark");
+
+		$nounArray = array("willow", "oak", "fox", "grizzly", "cell", "soma", "metal", "mind", "skin", "energy", "matter");
+
 		$min = 0;
-		$max = count($adjectiveArray) -1;
-		$randomIndex = mt_rand($min,$max);
-		return $adjectiveArray[$randomIndex];
+		$maxAd = count($adjectiveArray) -1;
+		$maxNoun = count($nounArray) - 1;
+		$randomAd = mt_rand($min,$maxAd);
+		$randomNoun = mt_rand($min, $maxNoun);
+		return $adjectiveArray[$randomAd] . " " . $nounArray[$randomNoun] . PHP_EOL;
 		
 
 
+	// echo "Your server name is " . getServerName($adjectiveArray, $nounArray) .  "." . PHP_EOL;
 
-	} getServerName($adjectiveArray);
+	} 
+	// echo getServerName();
 
-	echo "Your server name is " . getServerName($adjectiveArray) . PHP_EOL;
+?>
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="">
+	</head>
+	<body>
+		<h3>Your server name is <?php echo getServerName();?></h3>
+	</body>
+	</html>
+
