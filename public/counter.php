@@ -17,13 +17,10 @@
 	///////////////////////////////////////////////////////////////////////////////////
 	// 4.  Use the extract() function to change the return value of the pageController() into variables for your HTML.
 	//////////////////////////////////////////////////////////////////////////////////
+$counter = isset($_GET['counter']) ? $_GET['counter'] : 0;
+$url = "counter.php"
 
-
-
-
-
-
-
+ 
 
 
 ?>
@@ -33,8 +30,10 @@
 			<meta charset="utf-8">
 		</head>
 		<body>
-			<h3>Number</h3>
-			<a href="">Up</a>
-			<a href="">Down</a>
+			<div> $counter;
+			</div>
+			<h3>This page has been viewed: <? = $counterIncDec?></h3>
+			<a href="<?=$url; ?>?counter=<?= $counter + 1?>">Up</a>
+			<a href="<?=$url; ?>?counter=<?= $counter - 1?>">Down</a>
 		</body>
 	</html>
