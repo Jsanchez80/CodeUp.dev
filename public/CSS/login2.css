@@ -1,7 +1,7 @@
 /*Form styling was found on http://www.developerdrive.com/2013/03/how-to-create-a-beautiful-login-form/*/
 
 .bg {
-
+	
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -30,12 +30,14 @@
 /*If you added this correctly your login form should now look like this:*/
 
 
-html, body {   
- width: 100%;   
-height: 100%;   
-font-family: "Helvetica Neue", Helvetica, sans-serif;   
-color: #444;   
--webkit-font-smoothing: antialiased;    background: #f0f0f0;
+body {  
+
+	background: url('/Img/bg.png'); 
+	width: 100%;   
+	height: 100%;   
+	font-family: "Helvetica Neue", Helvetica, sans-serif;   
+	-webkit-font-smoothing: antialiased;
+
 }
 
 
@@ -43,13 +45,13 @@ color: #444;
 
 #container {
 
-position: fixed;
-width: 340px;
-height: 280px;
-top: 50%;
-left: 50%;
-margin-top: -140px;
-margin-left: -170px;
+	position: fixed;
+	width: 340px;
+	height: 280px;
+	top: 50%;
+	left: 50%;
+	margin-top: -140px;
+	margin-left: -170px;
 
 }
 
@@ -63,9 +65,10 @@ form {
 
 }
 
+/*Controls the color of the font in login box*/
 label {
 
-    color: #555;
+    color: white;
     display: inline-block;
     margin-left: 18px;
     padding-top: 10px;
@@ -117,7 +120,9 @@ input[type=password] {
 
     background: #ecf2f5;
     width: 100%;
-    height: 69px;
+    height: 65px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     margin-top: 20px;
 
 }
