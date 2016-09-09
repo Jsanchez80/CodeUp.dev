@@ -22,7 +22,7 @@
 	top: 50%;
 	margin-left: -186px;
 	margin-top: -125px;
-	background: #032b4f;
+	background: url('/Img/login2.png');
 	z-index: 10;
 
 }
@@ -126,6 +126,8 @@ input[type=password] {
     margin-top: 20px;
 
 }
+
+/*Controls the layout formatting for the check box and how far over it's positioned:*/
 
 input[type=checkbox] {
     margin-left: 20px;
