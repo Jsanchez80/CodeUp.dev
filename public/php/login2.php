@@ -1,5 +1,10 @@
 <?php
 
+// 1.  Create a file named login.php in your codeup.dev site. Add a form that accepts a username and password and have the form submit to the same page (login.php).
+
+$username = isset($_POST['username']) ? $_POST['username']: '';
+$password = isset($_POST['password']) ? $_POST['password']: '';
+
 var_dump($_POST);
 
 ?>
