@@ -1,0 +1,104 @@
+body {
+	background: url(/Img/sq.png);
+}
+
+/*Formatting for the Nav bar found at: http://www.freepik.com/index.php?goto=41&idd=567686&url=aHR0cDovL3d3dy5wc2RncmFwaGljcy5jb20vcHNkL2JsdWUtbG9naW4tYm94LWh0bWwtYW5kLWNzcy13aXRoLXBzZC10ZW1wbGF0ZS8=*/
+#navigation {
+	width: 100%;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	background: url(/Img/navigation-bg.jpg);
+} 
+#navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+} 
+#navigation ul li {
+	display: inline;
+	margin: 0px;
+} 
+#navigation ul li a {
+	height:33px;
+	display: block;
+	float: left;
+	padding: 17px 15px 0 15px;
+	font: bold 12px Arial;
+	color: #FFF;
+	text-decoration: none;
+	background: url(/Img/navigation-separator.png) no-repeat right center;
+} 
+
+#navigation ul li a:hover {
+	color:#134264;
+	background: url(/Img/navigation-hover.png) repeat-x left top;
+}
+
+#navigation ul li#active a {
+	color:#134264;
+	background: url(/Img/navigation-hover.png) repeat-x left top;
+}
+
+/*Formatting for the login and CSS found at; http://www.freepik.com/index.php?goto=41&idd=567686&url=aHR0cDovL3d3dy5wc2RncmFwaGljcy5jb20vcHNkL2JsdWUtbG9naW4tYm94LWh0bWwtYW5kLWNzcy13aXRoLXBzZC10ZW1wbGF0ZS8=*/
+
+
+#login-box {
+	width:333px;
+	height: 352px;
+	padding: 58px 76px 0 76px;
+	color: #ebebeb;
+	font: 12px Arial, Helvetica, sans-serif;
+	background: url(/Img/login-box-backg.png) no-repeat left top;
+}
+
+#login-box img {
+	border:black;
+}
+
+#login-box h2 {
+	padding:0;
+	margin:0;
+	color: #ebebeb;
+	font: bold 44px "Calibri", Arial;
+}
+
+
+#login-box-name {
+	float: left;
+	display:inline;
+	width:80px;
+	text-align: right;
+	padding: 14px 10px 0 0;
+	margin:0 0 7px 0;
+}
+
+#login-box-field {
+	float: left;
+	display:inline;
+	width:230px;
+	margin:0;
+	margin:0 0 7px 0;
+}
+
+
+.form-login  {
+	width: 205px;
+	padding: 10px 4px 6px 3px;
+	border: 1px solid #0d2c52;
+	background-color:#1e4f8a;
+	font-size: 16px;
+	color: #ebebeb;
+}
+
+
+.login-box-options  {
+	clear:both;
+	padding-left:87px;
+	font-size: 11px;
+}
+
+.login-box-options a {
+	color: #ebebeb;
+	font-size: 11px;
+}
