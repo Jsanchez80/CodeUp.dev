@@ -20,11 +20,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>       
     <script>
 
-        (function() {
         "use strict";
-                
     // TODO: Create an ajax GET request for /data/inventory.json
-        $.ajax("/data/inventory.json").done(function(data){//what is the task? Use an Ajax Request to obtain data and create a callback ".done" function
+        $.ajax("/data/inventory.json").done(function(data) {//what is the task? Use an Ajax Request to obtain data and create a callback ".done" function
+                console.log("wtf")
             console.log(data) // console log to ensure you're data is being captured
             var inventory = ""; //declare a variable that your function can use and interpret
             $(data).each(function(index){//what are you trying to display? a table <tr> and <th> with content for each list item: ref lines 12-17: this is how you want your data to display
@@ -41,9 +40,12 @@
                  $("#ref_butn").click(function(index) {
                     location.reload("/data/inventory.json");
                     alert("New Product's Were Just Added!")
-        });     
-})();
-</script>
 
-</body>
+                $.ajax("/data/inventory.json").fail(function(data) {
+                    console.log("Everything went wrong!");
+})
+            });     
+
+        </script>
+    </body>
 </html>

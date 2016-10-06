@@ -7,7 +7,7 @@
         ],
         "price": 20
     }, {
-        "title": "Dewalt Cordless Impact Drill",
+         "title": "Dewalt Cordless Impact Drill",
         "quantity": 5,
         "categories": [
             "tool",
@@ -118,20 +118,20 @@
             "hand"
         ],
         "price": 7
-}, {
-    "title": "Est Wing Cat Claw/Nail Puller",
-        "quantity": 10,
-        "categories": [
-            "tool",
-            "hand"
-        ],
-        "price": 20
-}, {
-    "title": "Est Wing Pro Claw RSC(3 in 1)",
-        "quantity": 10,
-        "categories": [
-            "tool", 
-            "hand"
-        ],
-        "price": 15
-}
+    }, {
+        "title": "Est Wing Cat Claw/Nail Puller",
+            "quantity": 10,
+            "categories": [
+                "tool",
+                "hand"
+            ],
+            "price": 20
+    }, {
+        "title": "Est Wing Pro Claw RSC(3 in 1)",
+            "quantity": 10,
+            "categories": [
+                "tool", 
+                "hand"
+            ],
+            "price": 15
+    }

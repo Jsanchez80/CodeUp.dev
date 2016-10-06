@@ -1,0 +1,53 @@
+body {
+	background-image: url("/Img/blue2.png");
+	}
+
+a {color: green;
+	}
+
+a: hover {text-decoration: underline; 
+	}
+
+h2 {
+	font-family: 'Lato', sans-serif;
+  	color: #ff9999;
+	}
+
+h3 {
+	font-family: 'Lato', sans serif;
+	color: white;
+	}
+
+h4 {
+	font-family: 'Lato', sans-serif;
+  	color: #ff9999;
+	}
+
+h5 {
+	font-family: 'Lato';
+	font-size: 15px;
+	color: white;
+}
+
+hr {
+	color: #28784b;
+}
+
+.alto {
+	font-family: 'Lato';
+	color: white;
+
+}
+
+.invisible{
+	font-family: 'Lato', sans-serif;
+	color: white;
+	
+	}
+
+.question {
+	font-family: 'Lato';
+	color: #ff9999;
+	}
+
+			

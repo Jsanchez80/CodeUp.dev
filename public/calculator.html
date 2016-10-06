@@ -3,18 +3,20 @@
 	<html lang="en">
 		<head>
 			<link rel="stylesheet" href="/calculator.css">
+			<script type="text/javascript" src="/calculator.js"></script>
 			<link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
 			<meta charset="utf-8">
 			<title>That Wonky-lator</title>
 		</head>
 		<body>
+
 		<div id="box-teal" class="box">
 			<form>
 				<label for="left operand" font-color="black"><!-- <strong>
 						<br>Left Operand:</strong> !-->
 				<!-- <br> !-->
 				</label>
-					<input id="left operand" name="left operand" type="text" size="30" Placeholder="Enter Number.">
+					<input id="leftOperand" name="leftOperand" type="text" size="30" Placeholder="Enter Number.">
 				<!-- <br> !-->
 				<label for="Operator"><strong><!--
 						<br>Operator:</strong>!-->
@@ -22,37 +24,70 @@
 				</label>
 					<input id="operator" name="operator" type="text" size="5" Placeholder="Operator">
 				<!-- <br> !-->
-				<label for="right operand"><strong><!--
+				<label for="rightOperand"><strong><!--
 						<br>Right Operand:</strong>!-->
 				<!-- <br> !-->
-					<input id="right operand" name="right operand" type="text" size="30" placeholder="Enter number">
+					<input id="rightOperand" name="right operand" type="text" size="30" placeholder="Enter number">
 				</label>
 				<hr size="5px" color="#cc3d66">
 			</form>
-			<div id="box-calculator" class="box">
-				<div id="key-C" class="button" type="click">C</div>
-				<div id="key-PM" class="button">+/-</div>
-				<div id="key-P" class="button">%</div>
-				<div id="key-D" class="button">/</div>
-				<!--placed space here to represent the keys of calculator!-->
-				<div id="key-7" class="button">7</div>
-				<div id="key-8" class="button">8</div>
-				<div id="key-9" class="button">9</div>
-				<div id="key-X" class="button">x</div>
-				<!--placed space here to represent the keys of calculator!-->
-				<div id="key-4" class="button">4</div>
-				<div id="key-5" class="button">5</div>
-				<div id="key-6" class="button">6</div>
-				<div id="key-S" class="button">-</div>
-				<!--placed space here to represent the keys of calculator!-->
-				<div id="key-1" class="button">1</div>
-				<div id="key-2" class="button">2</div>
-				<div id="key-3" class="button">3</div>
-				<div id="key-A" class="button">+</div>
-				<!--placed space here to represent the keys of calculator!-->
-				<div id="key-0" class="button">0</div>
-				<div id="key-PD" class="button">.</div>
-				<div id="key-EQ" class="button">=</div>
+			
+			<!-- <form class="calcForm" name="calculator"> !-->
+				<div id="box-calculator" class="box">
+				<!--<div id="key-C" class="button" value="submit" click="clearLeftOperand()">C</div>
+				<div id="key-PM" class="button" value="+/-" click="()">+/-</div>
+				<div id="key-P" class="button" value="%" click="setOperation('percentage')">%</div>
+				<div id="key-D" class="button" value="/" click="setOperation('divide')">/</div>
+				!-->
+
+				
+				<button class="button" value="input button">C</button>
+				<button  class="button" value="input button">+/-</button>
+				<button class="button" value="input button">%</button>
+				<button class="button" value="input button">/</button>
+
+				<button id="key-7" class="button" value="7">7</button>
+				<button id="key-8" class="button" value="8">8</button>
+				<button id="key-9" class="button" value="9">9</button>
+				<button id="key-X" class="button" value="X">X</button>
+
+				<button id="key-4" class="button" value="4">4</button>
+				<button id="key-5" class="button" value="5">5</button>
+				<button id="key-6" class="button" value="6">6</button>
+				<button id="key-S" class="button" value="-">-</button>
+
+				<button id="key-1" class="button" value="1">1</button>
+				<button id="key-2" class="button" value="2">2</button>
+				<button id="key-3" class="button" value="3">3</button>
+				<button id="key-A" class="button" value="+">+</button>
+
+				<button id="key-0" class="button" value="0">0</button>
+				<button id="key-PD" class="button" value=".">.</button>
+				<button id="key-EQ" class="button" value="=">=</button>
+				<button id="key-Pi" class="button" value="3.14159">Pi</button>
+				<!--	placed space here to represent the keys of calculator
+				
+				<div id="key-7" class="button" value="7" click="numInput('7')">7</div>
+				<div id="key-8" class="button" value="8" click="numInput('8')">8</div>
+				<div id="key-9" class="button" value="9" click="numInput('9')">9</div>
+				<div id="key-X" class="button" value="X" click="setOperation('multiply')">X</div>
+					placed space here to represent the keys of calculator!
+				<div id="key-4" class="button" value="4" click="numInput('4')">4</div>
+				<div id="key-5" class="button" value="5" click="numInput('5')">5</div>
+				<div id="key-6" class="button" value="6" click="numInput('6')">6</div>
+				<div id="key-S" class="button" value="-">-</div>
+					placed space here to represent the keys of calculator
+				<div id="key-1" class="button" value="1" click="numInput('1')">1</div>
+				<div id="key-2" class="button" value="2" click="numInput('2')">2</div>
+				<div id="key-3" class="button" value="3" click="numInput('3')">3</div>
+				<div id="key-A" class="button" value="+" click="setOperation('')">+</div>
+					placed space here to represent the keys of calculator!
+				<div id="key-0" class="button" value="0" click="numInput('0')">0</div>
+				<div id="key-PD" class="button" value="." click="insertDecimal('.')">.</div>
+				<div id="key-EQ" class="button" value="=" click="calculate()">=</div>
+				<div id="key-Pi" class="button" value="3.14159" click="numInput('3.14159')">Pi</div>
+				!-->
 			</div>
+			</form>
 		</body>
 	</html>

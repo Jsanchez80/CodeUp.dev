@@ -70,13 +70,13 @@ function pageController()
 	$cohort = 'Lassen';
 	$message = "Hello $cohort ";
 	
-
-	///////////////////////////////////////////////////////////////////////////////////
 	// How many days are left til gradution? 
 	//////////////////////////////////////////////////////////////////////////////////
 
 	$number = getANumber();
 	$message =' There are $number days of class left until graduation! Are you excited?';
+
+	///////////////////////////////////////////////////////////////////////////////////
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// Initializes an  array of students on the right side of the class. 
@@ -93,8 +93,8 @@ function pageController()
 
 			return [
 			'message' => $message,
-			'number' => $number,
-			'seats' => $seats
+			'days' => $number,
+			'seats' => $seats,
 			];
 }
 
@@ -121,7 +121,6 @@ function pageController()
 	<html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="">
 	</head>
 	<body>
 		<h3>Your server name is <?= $serverName;?></h3>

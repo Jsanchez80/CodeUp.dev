@@ -10,7 +10,7 @@
 			},
 			mapTypeId: google.maps.MapTypeId.HYBRID
 };
-/////////////// Draw/display your map//////////////////////////////////////////////////////////////////////////////////////////
+			/////////////// Draw/display your map//////////////////////////////////////////////////////////////////////////////////////////
 			var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 //////////////// Include code from previous example///////////////////////////////////////////////////////////////////////////
 			var address = "5159 S Pulaski Rd, Chicago, IL 60632";//Set the address of your favorite resturaunt (in San Antonio) to geocode
@@ -42,7 +42,7 @@
 			// })
 			var windowText = '<div id = "content">'+
 			'<div id = "sideNotice"></div>'+
-			'<h1 id="firstHeading" class="firstHeading">Giordanos</h1>'+'<div id = "bodyContent">'+'<p><b>Giordanos</b>, known for their<em>Famous Stuffed Deep Dish Pizza</em>,is located in Chicago, Il with several units throughout the suburbs and Chicago Metropolis.</p>'+'<a href="https:giordanos.com"></a>'+'</div>'+'</div>';
+			'<h1 id="firstHeading" class="firstHeading">Giordanos</h1>'+'<div id = "bodyContent">'+'<p><b>Giordanos</b>, known for their <em>Famous Stuffed Deep Dish Pizza</em>, is located in Chicago, Il with several units throughout the suburbs and Chicago Metropolis.</p>'+'<a href="https:giordanos.com"></a>'+'</div>'+'</div>';
 
 			var marker = new google.maps.Marker({//Where you want your marker to show
 				position: {lat: 41.798862, lng: -87.722519},
@@ -54,7 +54,7 @@
     			content: windowText	
     });	
 
-    			marker.addListener('click', function() {
+				marker.addListener('click', function() {
     			infowindow.open(map, marker)
 	});	
 						

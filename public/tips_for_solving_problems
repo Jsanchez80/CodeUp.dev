@@ -1,0 +1,71 @@
+pattern for setting up a problem/solving a problem:
+process of visualization
+input--> process-->output
+
+Read the exercise
+what's the real problem
+whats the output that we're to product?
+what's the given input?
+what are the other specifications? validation?
+attention to detail/spotting differences
+take notes of what you want the code to do, where and in what order
+read the exercise
+figure out your variables
+input--> process-->output
+
+figure out your variables
+	-what stuff changes (what inputs neet to be worked on)
+	-what stuff get repeated (strings in the output)
+	-what stuff stays the same just once
+		-naming the nouns
+			-subTotal
+			-taxAmount
+			-taxPercentage
+			-discountAmount
+			-discountPercentage
+			-finalTotal
+
+Write out pseudo-code
+	(usually write this in comments, because you don't want your code to act haywire)
+		-defining inputs
+		-try out variable names (expect that they may change)
+		-defining process
+			-what verbs need to happen to what nouns
+			-what does each verb do 
+			-what's the order of the verba
+			-after a verb happens to a noun, does that mean we need a new noun name to hold the reuslt
+		-making your output match the specification
+		-do we need a loop? does the lopp need to happen at least once?
+		
+code small things
+once your specific problem is small enough, google exactly how to do it
+"how to generate a random number in javascript"
+Start converting tiny pieces of pseduocode into real code, take it from the top
+what did happen vs. what you expected to hapen?
+does it make sense?
+revisit variable (and function names) to see if they make sense?
+
+make small working pieces?
+use small working piecs in larger solutions
+
+revisit the entire solution, read the problem
+improve the accuracy and corretness
+improve the readability of your code
+
+## debugging
+use strict at the top of your script
+double check your file paths
+did you move the file while working on it, and you're editing one file while testing a different copy in the browser?
+doble check for link paths
+bring up your JS console to look for syntax errors or 404's
+try small things
+change onle one thing
+what as the expected vs. actual result
+change it back, try something different
+hold as many things constant as possible
+	-comment stuff out that doesn't work
+console.log all the things (or you'll be flying blind)
+	-https://www.reddit.com/r/programmingproblems
+	-https://www.codewars.com
+	-https://hackerrank.com
+// loop until you generate a random number that is odd

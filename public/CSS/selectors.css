@@ -1,0 +1,34 @@
+/* selector for id="container" */
+
+#container {
+    margin: 50px auto;
+    width: 500px;
+    padding: 10px;
+}
+
+/*  selector for all "h1" elements
+    that are a descendent of id="container"
+    and have a class of "fancy-header" */
+#container h1.fancy-header /*search for all h1 elements that descend from "container" and add the class selector .fancy-header*/
+ {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* selector for all "em" elements */
+/*use the 
+    em          {
+    font-weight: bold;
+}
+
+/* selector for all elements with class="article" */
+ .article{
+    clear:both;
+}
+
+/*  selector for all "anchor" elements
+    that are a direct child of an element with class="article" */
+    /*search code for the term article and use the > symbol to search for a tag to float text to right*/
+.article>a {
+    float:right;
+}

@@ -27,6 +27,7 @@ $('#toggle-answers').click(function () {
 	$('dd').toggleClass('invisible');
 });
 
+
 /* this will allow you to grab an unordered list and change attributes
 	it states grab the ul, for each ul seek the first child(li) and 
 	change the css font-weight to bold
@@ -41,7 +42,7 @@ grab the ul, for each ul, seek the parent ul and find each li and change style t
 >	$(this).parent('ul').each('li').css('.invisible');
 }
 */
-/*
+/* Correct syntax for previous challenge
 $('li').click(function(){
 	$(this).parent().addClass("alto")
 });*/
@@ -56,7 +57,7 @@ $('ul').each(function(index,element){
 });
 
 //add the .invisible class on the paren ul of any li that is clicked.
-$('h3').click(function() {
+$('ul').click(function() {
     //(this).parent().addClass("invisible");
    // $(this).parent()children('ul').children('li').slideToggle();
     $(this).next().slideToggle();

@@ -41,13 +41,80 @@
 		$randomAd = mt_rand($min,$maxAd);
 		$randomNoun = mt_rand($min, $maxNoun);
 		return $adjectiveArray[$randomAd] . " " . $nounArray[$randomNoun] . PHP_EOL;
-		
+
 
 
 	// echo "Your server name is " . getServerName($adjectiveArray, $nounArray) .  "." . PHP_EOL;
 
 	} 
 	$serverName = getServerName();
+
+//*************************************************************************************
+//*************************************************************************************
+
+////////////////////////////////////////////////////////////////////////////////////////////
+// VC Exercise added to the original server-name-generator exercise:  You will now need to convert them so that they use the above view-controller separation template. This should be really easy since you have been following the best practices we discussed, right? :)
+///////////////////////////////////////////////////////////////////////////////////////////
+function getANumber()
+{
+	return 63;
+}
+
+
+function pageController() 
+{
+	///////////////////////////////////////////////////////////////////////////////////
+	// Insert a message for class. 
+	//////////////////////////////////////////////////////////////////////////////////
+	
+	$cohort = 'Lassen';
+	$message = "Hello $cohort ";
+	
+
+	///////////////////////////////////////////////////////////////////////////////////
+	// How many days are left til gradution? 
+	//////////////////////////////////////////////////////////////////////////////////
+
+	$number = getANumber();
+	$message =' There are $number days of class left until graduation! Are you excited?';
+
+	///////////////////////////////////////////////////////////////////////////////////
+	// Initializes an  array of students on the right side of the class. 
+	//////////////////////////////////////////////////////////////////////////////////
+	
+	$seatsRight = array('Justin', 'Michael', 'Hector', 'Joey', 'Jose', 'Nicolas', 'Dan R.', 
+		'Dan C.');
+	$seats = [];
+
+		foreach($seatsRight as $seat) {
+			if($seats == 'Dan C.') { continue; }
+			$seats[] = $seat;
+		}
+
+			return [
+			'message' => $message,
+			'number' => $number,
+			'seats' => $seats
+			];
+}
+
+	///////////////////////////////////////////////////////////////////////////////////
+	// Add data to be used in the html view. 
+	//////////////////////////////////////////////////////////////////////////////////
+	// $data['message'] = 'Check out the seating arrangement!';
+
+	///////////////////////////////////////////////////////////////////////////////////
+	// Return the completed data array. 
+	//////////////////////////////////////////////////////////////////////////////////
+	return $dataReturnedFromPageController = pageController();
+	extract($dataReturnedFromPageController);
+
+
+	///////////////////////////////////////////////////////////////////////////////////
+	// Call the pageController function and extract all the returned array as local variables.
+	///////////////////////////////////////////////////////////////////////////////////
+
+
 
 ?>
 <!DOCTYPE html>

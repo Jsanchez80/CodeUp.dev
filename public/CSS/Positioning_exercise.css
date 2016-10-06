@@ -1,0 +1,51 @@
+
+}
+.box{
+		
+		height: 50px;
+		width: 50px;
+		color: #ffffff;
+		border: 1px solid black;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 10px;
+		font-weight: bold;
+		float:left;
+}
+	.box>img{
+		
+	}
+}
+	#box-red{
+		background-color: red;
+		
+		
+
+	}
+	#box-orange{
+		background-color: orange; 
+		
+		
+	}
+	#box-yellow{
+		background-color: yellow;
+				
+	}
+	#box-green{
+		background-color: green;
+		float:clear;
+		
+	}
+	#box-blue{
+		background-color: blue;
+		
+
+	}
+	#box-violet{
+		background-color: violet;
+		
+	}
+
+
+
+

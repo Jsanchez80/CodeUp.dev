@@ -1,0 +1,11 @@
+ 
+ Function is a thing that takes an input and produces an output.
+
+Syntax function name (parameters) {body}
+	-Defines the fnction 'Does not' run the code in the body
+	_Syntax errors will be caught, not logical ones
+
+Function doSomething () {
+	1 + 1;
+	console. log('Happy Monday')
+}

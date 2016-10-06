@@ -35,6 +35,7 @@
 
 
 ];
+//          Execute the action and display it in the html. 
   var $friendSelect = $('#friend');
   var options;
 
