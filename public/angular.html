@@ -1,0 +1,72 @@
+<?php
+require_once 'angular_js.js';
+
+?>
+
+<!DOCTYPE html>
+<html ng-app="weatherApp">
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap an Angular Module</title>
+</head>
+<body>
+	{{"Hello, Codeup!"}}
+
+	 <div id="container" class="container"><h3>Weather Map</h3></div> 
+        <!--Remember to utilize the div id in order to pull data from your JS and display it within your HTML. You had the right idea in your JS but forgot to add an id for your div, hence your data was not being displayed on the page. !-->
+        <table id="box1" class="box1">
+            <!-- Physically get the info you desire to display in the HTML it doesn't matter what it looks like as you can style it later with CSS.
+
+            You want to display the information in a table that has headers of Daily Forecast, Current Conditions, Current Temp, Humidity, and Pressure. This is the first step in creating the "Weather Map API". 
+            
+            You can then use CSS in order to get your data to display in a format that is acceptable in design  and readability, remember to organize your data in rows and create a column to display the data you grabbed in the API !-->
+            <tr>
+                <th>Forecast:</th>
+                <th>Temperature:</th>
+                <th>Humididty:</th>
+                <th>Windspeed:</th>
+                <th>Barometer:</th>
+            </tr> 
+            <tbody id="weatherData" class="weatherData"> 
+           
+            <!--   Placing the <tbody> below your actual table will allow the table to display in th manner you desire it to. Placing it above, prevents the table from generating properly. When placing it above the initial <tr> it causes the JS to read it as replace this content once you've loaded all operations and the table and all contents will dissapper. 
+
+                You had the right idea, however utilizing the <th> tag to get the proper headings for your table. 
+
+                You could utilize an id and class, however the easier best practice is getting the content organized similar to above using the <th> tags.
+
+                We want to use the <td> tag in the actual JS scripting. 
+                            !!!Don't do this!!!!
+                <td id="container" class="container">Welcome</td>
+                <td id="box" class="box">hello</td>
+                
+                <td id="box1" class="box1">testing this out</td>
+                <td id="box2" class="box2">testing</td>
+                <td id="box3" class="box3">Whoa!</td>
+            !-->
+            </tbody>
+
+            <div id="container" class="container"><h3></h3></div> 
+            <table id="box1" class="box1">
+            
+            <tr>
+                <th>Forecast:</th>
+                <th>Temperature:</th>
+                <th>Humididty:</th>
+                <th>Windspeed:</th>
+                <th>Barometer:</th>
+            </tr> 
+            <tbody id="weatherData" class="weatherData">
+            </tbody>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="/js/weather_map.js"></script>
+    </body>
+</html>
+	<script type="text/javascript" src="https://opensource.keycdn.com/angularjs/1.5.8/angular.min.js "></script>
+    <script type="text/javascript" src="/js/angular.min.js"></script>
+    <script type="text/javascript" src="/js/weatherApp.js"></script>
+</body>
+</html>

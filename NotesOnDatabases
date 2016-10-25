@@ -1,0 +1,94 @@
+/////////////////////////////////////////////////////////////////////
+What is a database? 
+ 	"Something you store data and you can search..."
+/////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////
+The definition of database is:
+ 	* An organized collection of data
+ 	* Way to store information in a computer
+ 	* Way to persist information
+ 		Currently we can't do this except through writing to files
+ 	* Have been around long before web dev
+ 	* Extremely effecient way to store and process data
+///////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////
+How to we interact with a database?
+//////////////////////////////////////////////////////
+Directly:
+DBMS: Database Management System
+	* Many differetnt types: relational, document-store, graph
+	* PostgreSQL, MySQL, MariaDB, Microsoft SQL Server, SQlite, 
+		MongoDB, NEo4j, etc
+	* Relatinonal is the most popular by far
+
+Relational Databases: Spreadsheets on Steroids
+	* Databases + Table
+
+SQL: Structured Query Language
+	* common to most relational db's with a few different quirks, different dialects
+	* ALL CAPS
+
+CRUD: Create Read Update Delete
+
+We'll use MySQL....
+/////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////
+Let's do it
+///////////////////////////////////////////////////////
+Log into your virtual server
+	cd ~/vagrant-lamp
+	vagrant ssh
+
+Start the mysql fli client(later we'll use a gui client)
+	mysqly -u vagrant -p
+	your password is vagrant
+
+**** Note:you will not see any input as it is invisible to protect your info ***
+
+ctrl L will clear the info from 
+ctrl c will clear monitor if -> is present
+A REPL for SQL
+//////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////
+MySQL supports different users with differnt parameters....
+
+
+Listing Users
+Select user, host, password FROM mysql.user;
+	Note: passwords are hashed
+	Select
+		we'll get more into this later
+
+THis is the syntax for MySQL:		
+	SELECT things FROM database.table;
+//////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////
+Creating a user:
+	CREATE USER 'billy'@'localhost'	IDENTIFIED BY 'billysSecretP@ss123';
+	CREATE USER 'sally'@'192.168.77.1'	IDENTIFIED BY 'passwordForSally321';
+
+Host Wildcards:
+	CREATE USER 'sally'@'192.168.%'	IDENTIFIED BY 'passwordForSally321';
+	CREATE USER 'sally'@'%'	IDENTIFIED BY 'passwordForSally321';
+
+	be careful here.
+//////////////////////////////////////////////////////
+
+Privileges:
+
+Granting all priveleges to a user...
+	GRANT ALL ON *.* TO 'billy'@'localhost';
+
+fine grained by command, database and table...
+	GRANT SELECT ON *.* TO 'read_only'@'%';
+	
+	GRANT SELECT, INSERT.......DIDN'T GET THE REST OF NOTES.
+
+
+
+

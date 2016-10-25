@@ -1,7 +1,7 @@
 <?php
 
 require 'parks_db.php';
-
+// require 'parks_migration.php';
 ///////////////////////////////////////////////////////////////////
 // I wanted to make sure all data was printing to the screen in
 // the correct order. My require's point and source data 
@@ -33,13 +33,33 @@ function getParks()
     $stmt = $dbc->query('SELECT * FROM parks_db');
 
     $rows = array();
-    while ($row = $stmt->fetch(PDO::FETCH_BOTH)) {
+    while ($row = $stmt->fetch()) {
         $rows[] = $row;
     }
-
+    
     return $rows;
+    
+/////////////////////////////////////////////////////////////
+// *NOTE: Use the fetchALL as a function rather than in parenths with (PDO::FETCHALL)
+//////////////////////////////////////////////////////
 
-} print_r($stmt->fetch(PDO::FETCH_BOTH));
+} print_r($stmt->fetchALL(PDO::FETCH_ASSOC));
+
+//////////////////////////////////////////////////////////////
+// *Note: Using an echo such as the one below allows us to
+// see all the data structure of our rows and columns. 
+// Make sure to comment the echo's out when posting 
+// to production. 
+// ** Side Note: the echo below prints to the browser 
+//  the PHP_EOL doesn't drop to a new line because it's 
+//  displaying in the browser. You must insert the echo into 
+//  your html in the form of a PHP insert. 
+/////////////////////////////////////////////////////
+
+	echo "Columns: " . $stmt->columnCount() . PHP_EOL;
+	echo "Rows: " . $stmt->rowCount() . PHP_EOL;
+	
+
 
 ?>
 <!DOCTYPE html>
@@ -47,7 +67,7 @@ function getParks()
 	<head>
 		<title>National Parks</title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="/css/national_parks.css">
+		<!-- <link rel="stylesheet" type="text/css" href="/css/national_parks.css"> -->
 		<script src="/Js/national_parks.js"></script>
 	</head>
 	<body>

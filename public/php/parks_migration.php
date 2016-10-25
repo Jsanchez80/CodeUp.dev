@@ -61,20 +61,22 @@ $parks = [
 	['name' => 'Yosemite','location' => 'California','date_established' => '1890-10-01','area' => '761266.19', 'description' => 'Yosemite features towering granite cliffs, dramatic waterfalls, and old-growth forests at a unique intersection of geology and hydrology. Half Dome and El Capitan rise from the parks centerpiece, the glacier-carved Yosemite Valley, and from its vertical walls drop Yosemite Falls, North Americas tallest waterfall. Three giant sequoia groves, along with a pristine wilderness in the heart of the Sierra Nevada, are home to an abundance of rare plant and animal species.'],
 	['name' => 'Zion','location' => 'Utah','date_established' => '1919-11-19','area' => '146597.60', 'description' => 'Located at the junction of the Colorado Plateau, Great Basin, and Mojave Desert, this geological wonder has colorful sandstone canyons, mountainous mesas, and countless rock towers. Natural arches and exposed plateau formations compose a large wilderness roughly divided into four ecosystems: desert, riparian, woodland, and coniferous forest.'],
 ];
+	//  need to truncate table so I don't continue adding duplicate table data.
 
-	$stmt = $dbc->prepare = ('INSERT INTO parks_db (name, location, date_established, area, description) VALUES (:name, :location, :date_established, :area, description');
+	$query = 'INSERT INTO parks_db (name, location, date_established, area, description) VALUES (:name, :location, :date_established, :area, description';
 
-	$dbc->exec($query);
-	echo "Inserted ID: " . $dbc->lastInsertId() . PHP_EOL;
+	$stmt = $dbc->prepare($query);
+
+	// echo "Inserted ID: " . $dbc->lastInsertId() . PHP_EOL;
 
 foreach ($parks as $park) {
-	$stmt->bindValue(':email', $park['name'], PDO::PARAM_STR);
+	$stmt->execute(
+	$stmt->bindValue(':name', $park['name'], PDO::PARAM_STR);
     $stmt->bindValue(':location',  $park['location'],  PDO::PARAM_STR);
     $stmt->bindValue(':date_established', $park['date_established'], PDO::PARAM_STR);
     $stmt->bindValue(':area',  $park['area'],  PDO::PARAM_STR);
     $stmt->bindValue(':description', $park['description'], PDO::PARAM_STR);
-    
-    $stmt->execute();
+    );
 
     
 }

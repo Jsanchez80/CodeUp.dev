@@ -1,4 +1,5 @@
 <?php
+require_once 'header_footer.html';
 
 session_start();
 // <!-- Create a file named authorized.php in your codeup.dev site. Add some HTML that simply says "Authorized" when it is viewed in the browser. -->
@@ -9,28 +10,26 @@ function pageController()
 
 // Check to see if the form was submitted without var_dumping: will post in the console:
 // place the term "die();" after the header in so that the process stops the operation.
-$redirect = "/php/login2.php";		
+$redirect = "/php/login2.php";	
+	
 // Add a check to the authorized.php page to see if the user is logged in by checking the userIsLoggedIn key. If they are, redirect to the authorized.php page instead of showing the login page.
-$username = $_SESSION['Logged_in'];
-$password = ($_SESSION['userIsLoggedIn']);
 
-if ($_SESSION['Logged_in'] && $_SESSION['userIsLoggedIn'] == true) {
-	 
-	} elseif 
-		($username == '' || $password == '') {
+
+if (isset($_SESSION['login_user']) && isset($_SESSION['userIsLoggedIn'])) {
+	 		$username = $_SESSION['login_user'];
+	 		
+	} else {
 			header("Location: $redirect");	
 			die();
 	} 
 
 	return [
 	'username' => $username,
-	'password' => $password,
 	];
 	
 	
-	
 } 
-	extract(pageController());
+ extract(pageController());
 
 ?> 
  
@@ -44,25 +43,15 @@ if ($_SESSION['Logged_in'] && $_SESSION['userIsLoggedIn'] == true) {
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="/css/authorized.css">
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic|Cinzel:400,700,900' rel='stylesheet' type='text/css'>
 	</head> 
 	<body>
 	<div>
-	<h3>Welcome <?= $username ?></h3>
-	</div>
-		<div id="container" class="logInBox">       
-		<form method="POST">
-			<label for="username">Username:</label>
-				<input type="text" id="username" name="username">
-			<label for="password">Password:</label>
-				<input type="password" id="password" name="password">
-		<div id="lower">
-			<input type="checkbox"><label for="checkbox">Keep me logged in</label>
-			<input type="submit" value="Login" location="/php/login2.php">
-		</div><!--/ lower-->
-		<div id="container" class="logInBox"> 
-			<h3>Profile:</h3> 
-		</div id="lower">
+	<?php 'header_footer.html' ?>
+	<h3>Welcome <?= $username ?></h3> 
+	</div>     
+		<form>
+			<a class="submit" type="button" value="Log Out" href="/php/logout.php">Leave Page</a>
 		</form>
-		</div>
 	</body>
 </html>

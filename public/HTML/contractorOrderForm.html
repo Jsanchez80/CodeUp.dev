@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Contractor Order Form(COF)</title>
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/ionicons.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/contractorOrderForm.css">
+		<!-- Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic|Cinzel:400,700,900' rel='stylesheet' type='text/css'>
+
+		<!-- Modernizr to provide HTML5 support for IE. -->
+		<script src="/js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<!-- <nav id="nav-menu" class="navbar nav-layla" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav">
+				<i class="ion-navicon"></i>
+			</button>
+			<a class="navbar-brand" href="#">Q-LEAP</a>
+		</div>
+		<div class="collapse navbar-collapse main-nav">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#wrap">Top</a><span class="hover-li"></span></li>
+				<li><a href="#about">(COF)</a><span class="hover-li"></span></li>
+				<li><a href="#resume">Onsite Services</a><span class="hover-li"></span></li>
+				<li><a href="#portfolio">Client Portal</a><span class="hover-li"></span></li>
+
+				<li><a href="#contact">Contact</a><span class="hover-li"></span></li>
+			</ul>
+		</div>
+	</nav>
+!-->
+<!--      Center Content Area of Form: CSS for Center of Container begins here    -->
+		
+		<!-- Introduction-->
+			
+			<h1>Welcome!</h1>
+			 <h2><font color="white">Welcome to the Contractor Order Form: </font></h2> 
+			 <p><h4><font color="white">Here is where you'll be able to place an order for labor; After placing your order for service, you'll be notified that your order is being processed.  By 10 pm tonight, you'll received notification on the status of your order.  There is no need to call in your order.
+			 </font></h4></p>
+			 <br>
+		
+		<div class="container">
+		<section id="top"> 
+		<p><h3><font color="salmon">Job Order Information:</h3></p>
+		<section class="center">
+		<form method="POST" action="codeup.dev/login_form.php">
+		<input type="hidden" id="user_id" name="user_id" value="1234">
+		 <p>
+		<label for="username"><font color="white">Order placed by:</font></label>
+			<input id="username" name="username" type="text" Placeholder="Enter Your Name Here">
+		</p>
+		<p>
+		<label for="customerName"><font color="white">Customer/Contractor Name:</font></label>
+			<input id="customerName" name="customerName" type="text" placeholder="Enter Your Company Name Here">
+		</p>
+		<p>
+		<label for="sicCode"><font color="white">Customer SIC Code:</font></label>
+			<input id="sicCode" name="sicCode" type="text" Placeholder="Enter Your SIC Code">
+		</p>
+		<p>
+		<label for="wcCode"><font color="white">WC Code:</font></label>
+			<input id="wcCode" name="wcCode" type="text" Placeholder="Enter Your WC Code">
+		</p>
+		<p>
+		<label for="reportTo"><font color="white">Report To:</font></label>
+			<input id="reportTo" name="reportTo" type="text" Placeholder="Name Of The Person My Team Is To Report To">
+		</p>
+		<label for="date"><font color="white">Date:</font></label>
+			<input id="date" name="date" type="text" Placeholder="What Day Are You Requesting Our Team To Report Onsite?">
+		</p>
+		<p>
+		<label for="time"><font color="white">Time:</font></label>
+			<input id="time" name="time" type="text" Placeholder="What Time Are You Requesting Our Team To Report Onsite?">
+		</p>
+		<label for="workerTitle"><font color="white">Worker Title:</font></label>
+			<input id="workerTitle" name="workerTitle" type="text" Placeholder="What Type Of Worker Are You Requesting? Carpenter? Tape And Float etc.">
+		</p>
+		<p>
+		<label for="numberOfWorkers"><font color="white">Number Of Workers:</font></label>
+			<input id="numberOfWorkers" name="numberOfWorkers" type="text" Placeholder="How Many Workers Are You Requesting?">
+		</p>
+		<label for="jobSiteAddress"><font color="white">Job Site Address:</font></label>
+			<input id="jobSiteAddress" name="jobSiteAddress" type="text" Placeholder="What Is The Job Site Address?">
+		</p>
+		<label for="city"><font color="white">City:</font></label>
+			<input id="city" name="city" type="text" Placeholder="What City Will Our Team Be Working In?">
+		</p>
+		<label for="state"><font color="white">State:</font></label>
+			<input id="state" name="state" type="text" Placeholder="What State Will Our Team Be Working In?">
+		</p>
+		<label for="zipCode"><font color="white">Zip Code:</font></label>
+			<input id="zipCode" name="zipCode" type="text" Placeholder="What Is The Job Site Zip Code?">
+		</p>
+		<label for="cellPhoneNumber"><font color="white">Cell Phone:</font></label>
+			<input id="cellPhoneNumber" name="cellPhoneNumber" type="text" Placeholder="Cell Phone Number We Can Reach You At?">
+		</p>
+		<label for="jobTitle"><font color="white">Job Title:</font></label>
+			<input id="jobTitle" name="jobTitle" type="text" Placeholder="What Is Your Job Title? Foreman? Superintendent, Etc.">
+		</p>
+		<label for="poNumber"><font color="white">PO Number:</font></label>
+			<input id="poNumber" name="poNumber" type="text" Placeholder="What Is The PO Number For Your Job Site Address?">
+		</p>
+		<br>
+		<p><h3><font color="white">Job Description:</h3></p>
+		<label for="qualifications"><font color="white">Are There Any Special Qualifications/Certifications You Are Looking For:</font></label>
+			<input id="qualifications" name="qualifications" type="text" Placeholder="What Qualifications Are You Asking For?">
+		</p>
+			<button type="submit">Place Your Order!</button>
+			<input type="checkbox" id="mailing_list" name="mailing_list" value="yes" checked>
+		<form>
+		</section>
+		
+		<hr>
+
+		<!-- New container-->
+	<!--<div class="container">
+	
+		<section class="education">	
+			<h2>Full Stack Web & Software Development 
+				<br>
+				<cite>CodeUp San Antonio...</cite></h2>
+		</section>
+		
+		<hr>
+		!-->	
+		<!--Experience Tables-->
+		<!--<section class="experience">
+			<div class="row">
+				<div class="grid-2">
+					<h2><strong>Leonard Contracting</strong></h2>
+					<p><em>Carpenter</em></p>
+					<p>June 2105 - July 2016</p>
+				</div>
+				<div class="grid-4">
+					<ul>
+						<li>Follow blueprints and building plans to meet the needs of clients</li>
+						<li>Install structures and fixtures, such as windows and molding</li>
+						<li>Measure, cut, or shape wood, plastic, fiberglass, drywall, and other materials</li>
+						<li>Construct building frameworks, including wall studs, floor joists, and doorframes</li>
+						<li>Help put up, level, and install building framework with the aid of large pulleys and cranes</li>
+						<li>Inspect and replace damaged framework or other structures and fixtures</li>
+						<li>Instruct and direct laborers and other construction trade helpers</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="grid-2">
+					<h2><strong>iWorks Personnel</strong></h2>
+					<p><em> Branch Manager</em></p>
+					<p>June 2014-May 2015</p>
+
+				</div>
+				<div class="grid-4">
+					<ul>
+						<li>Assist and Support the CEO, Vice President and Regional Director in daiy operations</li>
+						<li>Command operations in San Antonio and Houston</li>
+						<li>Lead teams to increase sales through site visits, prospecting and inviting contractors to lunch.</li>
+						<li> Administer Human Rescource policy and procedure</li>
+						<li>Audit & verify documents for neededinformation and accuracy</li>
+						<li>fluent in all Microsoft applications, especially MS Word, Excel, Outlook and Access
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="grid-2">
+					<h2><strong>Planet Fitness</strong></h2>
+					<p><em>General Manager</em></p>
+					<p>Feb. 2012 - June 2014</p>
+				</div>
+				<div class="grid-4">
+					<ul>
+						<li>Provide a clean, comfortable and "Lunk-Free" experience</li>
+						<li>Impact sales utilizing tours, rate presentation, upgrading memberships and upselling Planet Fitness Merchandise</li>
+						<li>Maintain member/franchise database, safe management, cash audits and administrative duties</li>
+						<li>Manage payroll, scheduling, reports, email, inventory and maintain invoices and records</li>
+						<li>Directteam to increase cleanliness, quality, morale, sales and customer retention</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="grid-2">
+					<h2><strong>Whataburger</strong></h2>
+					<p><em>Manager(Level III)</em></p>
+					<p>March 2011 - Feb. 2012</p>
+				</div>
+				<div class="grid-4">
+					<ul>
+						<li>Promote and protect the Whataburger brand</li>
+						<li>Provide great hospitality by engagin customers and obtaining feeback</li>
+						<li>Offer a casual dining experience by providing a hot, freshly prepared, quality product in a comfortable, clean and friendly restaurant</li>
+						<li>Lead teams to increase quality, morale, sales and speed of service</li>
+						<li>Maintain back office (open/close), safe management, cash audits and administrative duties</li>
+						<li>Manage payroll, scheduling, reports, email inventory, and maintain invoices and records
+						<li>Plan and develop Change Process through design and execution of Change Protocols</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="grid-2">
+					<h2><strong>Crusader Staffing Associates</strong></h2>
+					<p><em>Startup/Transition Manager</em></p>
+					<p>Oct. 2006 - March. 2011</p>
+				</div>
+				<div class="grid-4">
+					<ul>
+						<li>Assist and support CEO, Regional and 3 Startup/Transition Managers with 18 accounts throughout the USA</li>
+						<li>Lead teams to increase morale, sales and sense of urgency</li>
+						<li>Administer human resource policy and procedures</li>
+						<li>Audit and verify documents for needed information and accuracy</li>
+						<li>Closely monitor reports to prevent possible loss, theft and identify potential gains</li>
+						<li>Plan travel accommodations for myself and other Supporting Management</li>
+						<li>Fluent in all Microsoft applicaitons, especially MS Word, Excel, Outlook and Access</li>
+					</ul>
+				</div>
+			<div class="row">
+				<div class="grid-2">
+					<h2><strong>HEB</strong></h2>
+					<p><em>Central Checkout Manager</em></p>
+					<p>June 1996 - Oct. 2005</p>
+				</div>
+				<div class="grid-4">
+					<ul>
+						<li>Maintain Central Checkout</li>
+						<li>Ideology of patience and service to others</li>
+						<li>Fostered a sense of teamwork focusing on common goals</li>
+						<li>Educating Partners about principles for excellent process exectution</li>
+						<li>Manage the performance of the Central Checkout Team</li>
+						<li>Communicate weekly schedules</li>
+						<li>Initiate Shrink Program for SA 27</li>
+						<li>Develop leadership style and built foundation in designing, developing and executing plans of action</li>
+						<li>Fluent in all Microsoft Applications, company intranet/internet, CICSI/II and Biometric systems
+					</ul>
+				</div>
+			</div>
+		</div>
+		</section>
+		
+		<hr>
+		
+		<section>
+		!-->
+			<!--List of skills-->
+			<!-- <div class="row">
+				<div class="grid-2">
+					<h1><strong>Skills</strong></h1>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Javascript</li>
+						<li>JQuery</li>
+						<li>Angular.js</li>
+						<li>Bootstrap</li>
+						<li>L.A.M.P. Stack</li>
+						<li>Git</li>
+						<li>Laravel</li>
+						<li>CICS I</li>
+						<li>CICS II</li>
+						<li>Microsoft Office Suite</li>
+					</ul>
+				</div>
+				
+				<div class="grid-4">
+					<h1><strong>In Conclusion</strong></h1>
+					<p>
+						Thanks for taking some time to get to know me and the projects I've worked on.  If you like what you've seen thusfar, please visit my company page <a target="_blank" href="codeupdev/myprofile/index.html">SomatiQ</a> where you can establish contact and leave me your comments.  
+					<p> Please browse around and discover the projects I'm  	currently working on and some I've worked on for 
+						previous employers. 
+					</p>
+					
+				</div>
+				!-->
+			</div>
+		</section>
+		<hr> 
+		<!-- Footer Begins Here -->
+		<div>
+		<footer class="center">
+		<hr>
+			<span>&copy; iWORKS 2016</span>
+		<hr>
+		</footer>
+		</div>
+	</body>
+</html>

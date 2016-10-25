@@ -7,9 +7,21 @@
 	<!--Custom fonts. To improve load times, remove this and update the h1 styling in style.css--> 
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
 	<!-- stylesheets -->
-	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/ionicons.min.css">
+		<link rel="stylesheet" href="/css/animate.css">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="resumestyle.css" type="text/css">
+		
+	<!-- Google Fonts -->
+
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic|Cinzel:400,700,900' rel='stylesheet' type='text/css'>
+
+	<!-- Modernizr to provide HTML5 support for IE. -->
+	<script src="/js/modernizr.custom.js"></script>
+	
 	<!-- favicon -->
-	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="shortcut icon" href="/Img/favicon.ico">
 	
 	<!-- just in case viewer is using Internet Explorer -->
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -17,15 +29,45 @@
 </head>
 
 <body>
-	
+<!-- Navigation  !-->
+
+	<nav id="nav-menu" class="navbar nav-layla" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav">
+				<i class="ion-navicon"></i>
+			</button>
+			<a class="navbar-brand" href="index.html#wrap">EVOQ</a>
+		</div>
+		<div class="collapse navbar-collapse main-nav">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#top">Top</a><span class="hover-li"></span></li>
+				<li><a href="index.html#about">About</a><span class="hover-li"></span></li>
+				<li><a href="index.html#resume">Resume</a><span class="hover-li"></span></li>
+				<li><a href="index.html#portfolio">Portfolio</a><span class="hover-li"></span></li>
+				<li><a href="index.html#contact">Contact</a><span class="hover-li"></span></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Preloader !-->
+	<!-- <div id="preloader"></div> !-->
 	<!-- Header-->
 	<header>
 		<h1>Jose G. Sanchez</h1>
-		<p>Software Developer</p>
+		<p>Full Stack Developer</p>
 	</header>
+	<div class="social-icons">
+		<ul>
+			<li class="facebook wow fadeInUp" data-wow-delay="1.1s" ><a href="https://www.facebook.com/EVOQ-631805186989283/"" target="_blank"><i class="ion-social-facebook"></i></a></li>
+			<li class="twitter wow fadeInUp" data-wow-delay="1.2s"><a href="#" target="_blank"><i class="ion-social-twitter"></i></a></li>
+			<li class="googleplus wow fadeInUp" data-wow-delay="1.3s"><a href="#" target="_blank"><i class="ion-social-googleplus"></i></a></li>
+			<li class="github wow fadeInUp" data-wow-delay="1.5s"><a href="https://github.com/Jsanchez80" target="_blank"><i class="ion-social-github"></i></a></li>
+			<li class="linkedin wow fadeInUp" data-wow-delay="1.6s"><a href="https://www.linkedin.com/in/jose-sanchez-1b030951" target="_blank"><i class="ion-social-linkedin"></i></a></li> 
+			<li class="youtube wow fadeInUp" data-wow-delay="1.7s" target="blank"><a href="#"><i class="ion-social-youtube"></i></a></li>
+		</ul>
+	</div>
 	
 	<div class="container">
-		
+		<section id="top">
 		<!-- Introduction-->
 		<section class="center">
 			<h1>Welcome!</h1>
@@ -40,7 +82,9 @@
 	<div class="container">
 	
 		<section class="education">	
-			<h2>Software Development <cite>CodeUp San Antonio...</cite></h2>
+			<h2>Full Stack Web & Software Development 
+				<br>
+				<cite>CodeUp San Antonio...</cite></h2>
 		</section>
 		
 		<hr>
@@ -55,9 +99,13 @@
 				</div>
 				<div class="grid-4">
 					<ul>
-						<li>BLAH BLAH BLAH</li>
-						<li>This is a place to give highlights of your work and responsibilities</li>
-						<li>This is a place to give highlights of your work and responsibilities. This is an example of a longer block with more text.</li>
+						<li>Follow blueprints and building plans to meet the needs of clients</li>
+						<li>Install structures and fixtures, such as windows and molding</li>
+						<li>Measure, cut, or shape wood, plastic, fiberglass, drywall, and other materials</li>
+						<li>Construct building frameworks, including wall studs, floor joists, and doorframes</li>
+						<li>Help put up, level, and install building framework with the aid of large pulleys and cranes</li>
+						<li>Inspect and replace damaged framework or other structures and fixtures</li>
+						<li>Instruct and direct laborers and other construction trade helpers</li>
 					</ul>
 				</div>
 			</div>
@@ -195,36 +243,36 @@
 
 		<!-- Gallery Block-->
 		<section class="gallery">
-			<h1 class="center">Our Industry:</h1>
+			<h1 class="center">Portfolio Projects</h1>
 			<div class="row">
-				<a href="http://codeup.dev/login_form.php"><img src="/img/envi logo.png" class="grid-2"></a>
-				<a href="http://codeup.dev/my_first_form.php"><img src="/img/heb.png" class="grid-2"></a>
-				<a href="http://codeup.dev/jobquery/iworks/jobquery.html"><img src="/img/iworks.png" class="grid-2"></a>
-				<a href="#"><img src="/img/whataburger.png" class="grid-2"></a>
-				<a href="#"><img src="/img/pf.png" class="grid-2"></a>
-				<a href="#"><img src="/img/joeris.png" class="grid-2"></a>
+				<a href="http://jose.dev/Hello_World_Class.html"><img src="/Img/myPage.png" class="grid-2"></a>
+				<a href="http://jose.dev/my_first_form.php"><img src="/Img/form.png" class="grid-2"></a>
+				<a href="http://jose.dev/indexLogin.html"><img src="/Img/iworksLogo.png" class="grid-2"></a>
+				<a href="http://jose.dev/google_maps_api.html"><img src="/Img/hella.png" class="grid-2"></a>
+				<a href="http://jose.dev/envilogin.php"><img src="/Img/Wheel.png" class="grid-2"></a>
+				
 			</div>
 		</section>
 		
 		<hr>
-		ß
+		
 		<!-- Testimonials-->	
 		<section class="testimonial">
 			<div class="row">
 				<div class="grid-2">
-					<img src="/img/iworks.png">
+					<img src="/Img/iworks.png">
 					<h2>iWorks Personnel</h2>
 					<p><h3>QLeap:</h3>"Bridges Supply and Demand" allowing contractors to fill staffing needs on the fly. Gone are the days of calling an office to place your order.</p>
 				</div>
 				
 				<div class="grid-2">
-					<img src="/img/crusader.png">
+					<img src="/Img/crusader.png">
 					<h2>Crusader Staffing Assoc.</h2>
 					<p><h3>R3L3NTL3SS:</h3> designed to keep your 3rd Party Logistics (3PL) company ahead of traffic. Real time weather updates are available to drivers as well as updates, damages, progress of unload.</p>
 				</div>
 		
 				<div class="grid-2">
-					<img src="/img/leonard.png">
+					<img src="/Img/leonard.png">
 					<h2>Leonard Contracting</h2>
 					<p><h3>L3O:</h3>created to keep the worksite organized. With access to digital plans, scheduling and realtime adjusmtent. You can use keep your eyes in the sky.</p>
 				</div>
@@ -237,7 +285,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="grid-3">
-					<img src="img/spotlight.jpg">
+					<img src="/Img/esch2X.png">
 				</div>
 				<div class="grid-3">
 					<h1>Project Spotlight</h1>
@@ -337,7 +385,7 @@
 		<!--Footer-->
 		<footer class="center">
 			<hr>
-			<span>&copy; Fairchild Management Group 2016</span>
+			<span>&copy; EVOQ 2016</span>
 		</footer>
 		
 	</div><!-- End Container -->

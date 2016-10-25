@@ -55,16 +55,23 @@ class Log {
 			fwrite($this->handle, $string);
 	}
 
-	function info()
+	function info($message)
 	{
-		$this->logMessage("INFO", "This is the first info message.");
+		$this->logMessage("INFO", $message);
 
-	}
+	} 
 
-	function error()
+	function error($message)
 	{
-		$this->logMessage("ERROR", "This is the secondinfo message.");
+		$this->logMessage("ERROR", $message);
 	}
 
 }
+
+
+
+
+
+
+
 

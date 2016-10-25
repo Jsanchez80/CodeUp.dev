@@ -37,55 +37,143 @@
 		$data['curPage'] = $page;
 		$i = 0;
 
-
+	}
 		// Rather than halting execution when the user passes an incorrect value, use try and catch to grab the error message and cache it, so that the rest of the page can continue as normal. (Hint: An array called $errors could be useful for this.)
 
 
-		$errors = [];
+// 		$errors = [];
 
-		try {
+// 		try {
 			
-			throw new Excpetion('$key needs to be a number');
+// 			throw new Exception('$key needs to be a number');
 
-		} catch(Exception $e) {
-			$errors [] = $exception->getMessage();
+// 		} catch(Exception $e) {
+// 			$errors [] = $exception->getMessage();
 
-			echo "An unknown error occurred!, please double check your entry" . PHP_EOL;
-		}
-			var_dump($errors);
+// 			echo "An unknown error occurred!, please double check your entry" . PHP_EOL;
+// 		}
+// 			var_dump($errors);
 
-		// set variable and figure out what conditions you're solving for:
-		// Checks conditions and prepares error messages 
-		if (isset($_REQUEST['submitted'])) {
-			$errors = array();
+// // set variable and figure out what conditions you're solving for:
+// // Checks conditions and prepares error messages 
+// 		if (isset($_REQUEST['submitted'])) {
+// 			$errors = array();
 
-		}
+// 		}
 
 
-		// Checks If the park name is entered is entered, if it is proceed to next step
-		if (!empty($_REQUEST['name'])) {
-			$name = $_REQUEST['name'];
+// // Checks If the park name is entered, if it is proceed to next step
+// 		if (!empty($_REQUEST['name'])) {
+// 			$name = $_REQUEST['name'];
 
-			// $nameVerify compares the data you entered to the condition you create for alphabets A-Z. 
-			$nameVerify = ctype_alpha('');
+// $nameVerify compares the data you entered to the condition you create for alphabets A-Z. 
+		// 	$nameVerify = ctype_alpha();
 
 		
-		if (preg_match($nameVerify,$name)) {$name = $_REQUEST['name'];
+		// if (preg_match($nameVerify,$name)) {
 
-		} else {
+		// 	$name = $_REQUEST['name'];
+
+		// } else {
 			
-			$errors = 'Park Name can only contain alphabetic letters A-Z';
+		// 	$errors = 'Park name can only contain alphabetic letters A-Z';
 
-		} else {
+		// } 
 
-			$errors = 'You forgot to enter the park name';
-		}
+		// 	$errors = 'You forgot to enter the park name';
+		// }
 
-				
+// Checks If the park location  is entered, if it is proceed to next step		
 			
-		if (!empty($_REQUEST['location'])) {
+		// if (!empty($_REQUEST['location'])) {
+		// 	$location = $_REQUEST['location'];
+
+		// // $locationVerify compares the data you entered to the condition you create for alphabets A-Z.
+
+		// 	$locationVerify = ctype_alpha();
+
+		// }
+
+		// if (preg_match(($locationVerify, $location)) {
+
+		// 	$location = $_REQUEST['location'];
+		// } else {
+
+		// 	$errors = 'Park location can only contain alphabetic letters A-Z';
+
+		// } else {
+
+		// 	$errors = 'You forgot to enter the park location';
+		// }
+
+		// Checks If the park "date established"  is entered, if it is proceed to next step	
+
+		// if (!empty($_REQUEST['established'])) {
+		// 	$established = $_REQUEST['established'];
 			
-		}
+		// // $establishedVerify compares the data you entered to the condition you create for date established is alphanumeric.
+
+		// 	$establishedVerify = ctype_alnum();
+		// }
+
+		// if (preg_match(($establishedVerify, $established)) {
+
+		// 	$established = $_REQUEST['established'];
+		// } else {
+
+		// 	$errors = 'Park established can only contain numbers';
+
+		// } else {
+
+		// 	$errors = 'You forgot to enter the park established';
+		// }
+
+		// Checks If the area  is entered, if it is proceed to next step	
+
+		// if (!empty($_REQUEST['area'])) {
+		// 	$area = $_REQUEST['area'];
+			
+		// // $areaVerify compares the data you entered to the condition you create for area is numeric.
+
+		// 	$areaVerify = is_numeric();
+		// }
+
+		// if (preg_match(($areaVerify, $area)) {
+
+		// 	$area = $_REQUEST['area'];
+		// } else {
+
+		// 	$errors = 'Park area can only contain numbers';
+
+		// } else {
+
+		// 	$errors = 'You forgot to enter the park area';
+		// }
+
+
+
+		// Checks If the description  is entered, if it is proceed to next step	
+
+		// if (!empty($_REQUEST['description'])) {
+		// 	$description = $_REQUEST['description'];
+			
+		// // $descriptionVerify compares the data you entered to the condition you create for description is alphanumeric.
+
+		// 	$descriptionVerify = is_numeric();
+		// }
+
+		// if (preg_match(($descriptionVerify, $description)) {
+
+		// 	$description = $_REQUEST['description'];
+		// } else {
+
+		// 	$errors = 'Park description must contain content';
+
+		// } else {
+
+		// 	$errors = 'You forgot to enter the park description';
+		// }
+
 
 
 
@@ -97,11 +185,11 @@
 		
 
 
-		return $data;
+	// 	return $data;
 
-	}
+	// }
 
-	extract(pageCtrl($dbc));
+	// extract(pageCtrl($dbc));
 
 
 ?>
@@ -221,12 +309,12 @@
 			<textarea id="description" class="input" name="text" rows="7" cols="30"></textarea>
 			<br>
 		</div>
-			<input id="submit" type="submit" value="Submit" />
+			<input id="submit" type="submit" value="Submit">
 	</form>	
 	</div>	
 				
  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
- </body>
+ 	</body>
  </html>
