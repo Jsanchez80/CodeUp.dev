@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<title>Contact Us</title>
 		<link rel="stylesheet" href="/css/contactEnvi.css">
-		<link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Space+Mono" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 		<!-- Optional theme -->
@@ -14,7 +14,8 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-		<script src="/js/modernizr.custom.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
 	</head>
 	<body>
@@ -22,14 +23,14 @@
 		<nav  class="fixed-nav-bar">
   		<div class="container-fluid">
    			<div class="collapse navbar-collapse main-nav">
-   				<a class="navbar-brand" href="index.html#wrap">EVOQ</a>
+   				<a class="navbar-brand" href="index.html#wrap"><h5>EVOQ</h5></a>
    				
    				<ul class="nav navbar-nav navbar-right">
-   				<li><a href="#about">About</a><span class="hover-li"></span></li>
-   				<li><a href="#howTo">How To</a><span class="hover-li"></span></li>
-   				<li><a href="#starterKits">Starter Kits</a><span class="hover-li"></span></li>
-   				<li><a href="#contact">Contact</a><span class="hover-li"></span></li>
-      			<li><a class="navbar-brand" href="/php/authEnvi.php" data-toggle="modal" data-target="#login-modal">Sign In</h5></a><span class="hover-li"></span></li>
+   				<li><a href="#about"><h5>About</h5></a><span class="hover-li"></span></li>
+   				<li><a href="#howTo"><h5>How To</h5></a><span class="hover-li"></span></li>
+   				<li><a href="#starterKits"><h5>Starter Kits</h5></a><span class="hover-li"></span></li>
+   				<li><a href="#contact"><h5>Contact</h5></a><span class="hover-li"></span></li>
+      			<li><a class="navbar-brand" href="/php/authEnvi.php" data-toggle="modal" data-target="#login-modal"><h5>Sign In</h5></a><span class="hover-li"></span></li>
       			</ul>
     		</div>
   		</div>
@@ -37,64 +38,141 @@
 
 		<!-- End NavBar !-->
 
-		<!-- Start Image !-->
-	<!-- <section id="contactPage">
-	<div class="container">
-		<div class="imageFile">
-			<div id="startImage">
-				<img src="/Img/getWashed.png" alt="Jane Doe" class="img-responsive portrait">
-			</div>
-		</div>
-		</div>
-		
-		</div>
-	</section> -->
+
 
 	<section id="connect">
-		<div class="container">
+		<div class="row">
 			<div class="row">
-				<div class="col-xs-12">
-					<div class="title text-center wow zoomIn">
+				<div class="col-sm-12">
+					<div class="title text-center">
 					<h1>Connect with <em><b>ENVI</b></em></h1>
 					<span class="title line"></span>
+					<!-- <div class="divider-small-border"> -->
+					<!-- <img src="/Img/getWashed.png"> -->
+				<!-- 	</div> -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
+
+	<!-- Start Image !-->
+	<section id="contactUs">
+	<div id="map-canvas">
+			
+		</div>
+	</section>
+
+
 	<!-- About our location !-->
 	<section id="contact-body">
-		<div class="container">
+		<div class="row">
 			<div class="row">
-				<div class="col-sm-6 text-center wow fadeInLeft">
-					<h1 class="section-heading">About us:<br><h3>Check out my <a target="_blank" href="/jose_sanchez_resume.html">Resume</a> and the businesses that have taken us from "Zeroes to Heroes!"</h3></h1>	
+				<div class="col-sm-12 text-center">
+					<h3>Located near Downtown San Antonio</h3>
+					
+
+					<h2 class="section-heading">Store Location:</h2>
+					<h3>110 E Houston St, <br>
+						San Antonio, TX, 78205
+					</h3>
+					<h3>enviwaterless@gmail.com</h3>
+					<h3>Phone for Booking: (210) 445-0892</h3>	
+					</div>
 				</div>
 			
 
-		<div class="col-sm-6 center wow fadeInRight">
+		<!-- <div class="col-sm-6 center wow fadeInRight">
 			<div class="section-heading">		
 		 		<div class="col-sm-6 text-center wow fadeInLeft">
-					<img src="/Img/freedom.png" alt="Jane Doe" class="img-responsive portrait">
+					<img src="/Img/tesla.png" alt="Jane Doe" class="img-responsive portrait">
 				</div>
 			</div>
+		</div> -->
 		</div>
-		</div>
-		</div>
-	
+		</div>	
 	</section>
+	<!-- Start Google Map -->
 	<section>
-		<div class="container">
+		<div class="row">
 			<div class="map">
-				<div id="map-canvas">
+			<div id="map-canvas">
 				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL9fGEKNmku3pZ7PFKdfrytY1AHqY_hu8"></script>
 				<script src="/Js/enviAddress.js"></script>
-				</div>
 			</div>
-
-		
-		<p><h4>Feel free to take a look around and if 
-		 you have any suggestions, please feel free to contact me.</h4></p>
 	</section>
+	<br>
+	<br>
+	<br>
+	<br>
+	<!-- End Google Map -->
+
+	<!-- Contact Section -->
+
+	<section id="contact">
+	<div class="container">
+	<div class="row">
+	<div class="col-xs-12">
+		<div class="title text-center wow zoomIn">
+			<h1><em>I <b>ENVI</b> You!</em></h1>
+	<span class="title line"></span>
+	</div>
+	</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6 wow fadeInLeft">
+			<p>Make us your ENVI and drop a message!</p>
+		<form action="https://formspree.io/enviwaterless@gmail.com" id="contact-form" method="post" class="form afsana-form" role="form">
+		<div class="row">
+		<div class="col-sm-12 form-group">
+			<input class="form-control afsana-style" id="name" name="name" placeholder="Name" type="text" required autofocus />
+		</div>
+		<div class="col-sm-12 form-group">
+			<input class="form-control afsana-style" id="email" name="_replyTo" placeholder="Email" type="email" required />
+		</div>
+		<div class="col-sm-12 form-group">
+			<textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+		</div>
+		<div class="col-sm-12 form-group">
+			<button class="btn btn-primary afsana-btn" type="submit" value="send">Submit <i class="ion-arrow-graph-up-right"></i></button>
+		</div>
+		</div>
+		</form>
+	</div>
+	<!-- Facebook Feed Linked to my business site !--> 
+	<div class="fb-page" data-href="https://www.facebook.com/Evoq-631805186989283" data-tabs="timeline" data-width="600" data-height="315" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Evoq-631805186989283" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Evoq-631805186989283">EVOQ</a></blockquote></div>
+	<div class="social-icons">
+		<ul>
+			<li class="facebook wow fadeInUp" data-wow-delay="1.1s" ><a href="https://www.facebook.com/EVOQ-631805186989283/"" target="_blank"><i class="ion-social-facebook"></i></a></li>
+			<li class="twitter wow fadeInUp" data-wow-delay="1.2s"><a href="#" target="_blank"><i class="ion-social-twitter"></i></a></li>
+			<li class="googleplus wow fadeInUp" data-wow-delay="1.3s"><a href="https://plus.google.com/u/0/104397176558605539748" target="_blank"><i class="ion-social-googleplus"></i></a></li>
+			<li class="github wow fadeInUp" data-wow-delay="1.5s"><a href="https://github.com/Jsanchez80" target="_blank"><i class="ion-social-github"></i></a></li>
+			<li class="linkedin wow fadeInUp" data-wow-delay="1.6s"><a href="https://www.linkedin.com/in/jose-sanchez-1b030951" target="_blank"><i class="ion-social-linkedin"></i></a></li> 
+			<li class="youtube wow fadeInUp" data-wow-delay="1.7s" target="blank"><a href="#"><i class="ion-social-youtube"></i></a></li>
+		</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+	</section>
+
+<!-- Copyright Section -->
+
+	<section id="footer">
+	<div class="container">
+	<div class="row">
+	<div class="col-sm-8">
+		<p class="copyright text-center"><h3>Copyright © 2016 Site designed by EVOQ: All rights reserved.</h3></p>
+	</div>
+	<div class="col-sm-3">
+		<p class="warp">Site Deployed @<img src="/assets/warp2.png" href="https://warpspeed.io/"></p>			
+	</div>
+	
+	</div>
+	</div>
+	</section>
+</div>
+
 	</body>
 </html>
