@@ -35,28 +35,29 @@
 
 
 		
-		<!-- Modal Begin -->
+		<!-- Service Modal Begin -->
 		<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none; padding: 30px; font-family: 'Open Sans Condensed', sans-serif;">
     		<div class="modal-dialog">
 				<div class="loginmodal-container">
 					<h1>Schedule Your Wash</h1><br>
 				  <form method="POST" action="http://formspree.io/enviwaterless@gmail.com">
-				  	<h5>Contact Info</h5>
+				  	<h4>Contact Info</h4>
 					<input type="text" name="firstName" placeholder="First Name">
 					<input type="text" name="lastName" placeholder="Last Name">
 					<input type="text" name="email" placeholder="Email">
 					<input type="text" name="phone" placeholder="Phone Number (210) 111-1111">
-					<h5>Vehicle Info</h5>
+					<input type=text name="address" placeholder="Address">
+					<h4>Vehicle Info</h4>
 					<input type="text" name="make" placeholder="Vehicle Make">
 					<input type="text" name="model" placeholder="Vehicle Model">
 					<input type="text" name="color" placeholder="Color">
-					<h5>Select Your ENVI Package</h5>
+					<h4>Select Your ENVI Package</h4>
 						<select>
 							<option  name="replenish">Replenish</option>
 							<option  name="radiance">Radiance</option>
 							<option  name="midSize">ENVI</option>
 						</select>
-					<h5>Select The Type of Vehicle</h5>
+					<h4>Select The Type of Vehicle</h4>
 					<select>
 						<option  name="coupe">Coupe</option>
 						<option  name="4Door">Sedan</option>
@@ -66,9 +67,23 @@
 						<option  name="fullSizeTruck">Full-Size Truck</option>
 					</select>
 					<br>
+					<!-- <form> -->
+					<h4>Schedule Service:</h4>
+					    <input type="date" name="schedule">
+				    <!-- </form>
+				    <form > -->
+					<h4>Service Time:</h4>
+					  	<input type="time" name="usr_time">
+					
+					<br>
+					<h4>Specific Requests/Comments:</h4>
+					<!-- <form> -->
+					<textarea rows="10" cols="40"></textarea>
+						
+					<br>
 					<br>
 					<input type="submit" name="login" class="login loginmodal-submit">
-				  </form>
+				  <!-- </form> -->
 					
 				<div class="login-help">
 					<a href="#">Register</a> - <a href="#">Forgot Password</a>
