@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="/css/newLogin.css">
 		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Space+Mono" rel="stylesheet">
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
@@ -36,11 +36,11 @@
 
 		
 		<!-- Modal Begin -->
-		<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none; padding: 30px;">
+		<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none; padding: 30px; font-family: 'Open Sans Condensed', sans-serif;">
     		<div class="modal-dialog">
 				<div class="loginmodal-container">
 					<h1>Schedule Your Wash</h1><br>
-				  <form>
+				  <form method="POST" action="http://formspree.io/enviwaterless@gmail.com">
 				  	<h5>Contact Info</h5>
 					<input type="text" name="firstName" placeholder="First Name">
 					<input type="text" name="lastName" placeholder="Last Name">
@@ -50,6 +50,13 @@
 					<input type="text" name="make" placeholder="Vehicle Make">
 					<input type="text" name="model" placeholder="Vehicle Model">
 					<input type="text" name="color" placeholder="Color">
+					<h5>Select Your ENVI Package</h5>
+						<select>
+							<option  name="replenish">Replenish</option>
+							<option  name="radiance">Radiance</option>
+							<option  name="midSize">ENVI</option>
+						</select>
+					<h5>Select The Type of Vehicle</h5>
 					<select>
 						<option  name="coupe">Coupe</option>
 						<option  name="4Door">Sedan</option>
