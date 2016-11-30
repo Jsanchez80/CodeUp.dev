@@ -1,0 +1,15 @@
+.thumbPicBorder {
+  position: relative;
+  padding-bottom: 20%;
+  height: 0;
+}
+
+.thumbnails {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: teal; 
+}

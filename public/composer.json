@@ -1,0 +1,5 @@
+{
+    "require": {
+        "emojione/emojione": "^2.2"
+    }
+}
