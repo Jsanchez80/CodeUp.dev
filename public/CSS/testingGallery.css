@@ -13,21 +13,28 @@
   height: 100%;
   background: teal; 
 }*/
-body {
 
+.page-divider {
+    padding: 25px;
+    margin: 50px;
+    border-width: 0 0 2px;
+    border-style: solid;
+    border-color: #e4e4e4;
 }
-#container {
-    background-image: url('/Img/sq.png');
-    padding: 5px;
+.container {
+   /* background-image: url('/Img/sq.png');*/
+    padding: 75px;
     margin: 25px;
+  
 }
 
 div.img {
     border: 1px solid #ccc;
+
 }
 
 div.img:hover {
-    border: 3px solid #3399cc;
+    border: 1.80px solid #3399cc;
 }
 
 div.img img {
@@ -61,11 +68,5 @@ div.desc {
     .responsive {
         width: 100%;
     }
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
