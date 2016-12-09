@@ -132,7 +132,7 @@ footer.ft-text {
 }
  .col-md-3 {
     top: 5px;
-    width: 60%;
+    width: 35%;
     height: 255px;
     background-color: #3259ab;
     position: relative;
@@ -145,7 +145,7 @@ footer.ft-text {
  .col-md-6 {
     /*position: relative;*/
     top: 5px;
-    width: 40%;
+    width: 30%;
     height: 255px;
     background-color: #3259ab;
     color: white;

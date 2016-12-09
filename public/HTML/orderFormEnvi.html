@@ -15,6 +15,11 @@
 
 		<script src="/js/modernizr.custom.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+
+		<!-- Google reCaptcha -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
 	</head>
 	<body>
 	<!-- NavBar -->
@@ -51,13 +56,7 @@
 					<input type="text" name="make" placeholder="Vehicle Make">
 					<input type="text" name="model" placeholder="Vehicle Model">
 					<input type="text" name="color" placeholder="Color">
-					<h4>Select Your ENVI Package</h4>
-						<select>
-							<option  name="replenish">Replenish</option>
-							<option  name="radiance">Radiance</option>
-							<option  name="midSize">ENVI</option>
-						</select>
-					<h4>Select The Type of Vehicle</h4>
+					<h4>Vehicle Type</h4>
 					<select>
 						<option  name="coupe">Coupe</option>
 						<option  name="4Door">Sedan</option>
@@ -67,21 +66,37 @@
 						<option  name="fullSizeTruck">Full-Size Truck</option>
 					</select>
 					<br>
-					<!-- <form> -->
+					<h4>Vehicle Location</h4>
+					<input type="text" name="address" placeholder="Street Address">
+					<input type="text" name="city" placeholder="City">
+					<input type="text" name="zip_code" placeholder="Zip Code">
+					<h4>Select Your ENVI Service</h4>
+						<select>
+							<option  name="replenish">Replenish</option>
+							<option  name="revitalize">Revitalize</option>
+							<option  name="radiance">Radiance</option>
+							<option  name="midSize">ENVI</option>
+						</select>
 					<h4>Schedule Service:</h4>
 					    <input type="date" name="schedule">
-				    <!-- </form>
-				    <form > -->
 					<h4>Service Time:</h4>
 					  	<input type="time" name="usr_time">
-					
 					<br>
+					<!-- Payment Info -->
+					<h4>Payment</h4>
+					<input type="text" name="card" placeholder="Card Number">
+					<input type="text" name="CVC" placeholder="CVC">
+					<input type="text" name="expiration" placeholder="Expiration">
 					<h4>Specific Requests/Comments:</h4>
-					<!-- <form> -->
-					<textarea rows="10" cols="40"></textarea>
+					<textarea rows="10" cols="40" placeholder="Provide any notes that will help us serve you best. For example, how to locate your vehicle, where to park, special requests. If we will have access to a power outlet, please indicate the location."></textarea>
 						
 					<br>
 					<br>
+					<form action="?" method="POST">
+      					<div class="g-recaptcha" data-sitekey="6LfpXw4UAAAAAF-vJ1D525G3U0sJmtSMjlKPWG3T"></div>
+      					<br/>
+      					<input type="hidden" value="Submit">
+    				</form>
 					<input type="submit" name="login" class="login loginmodal-submit">
 				  <!-- </form> -->
 					
