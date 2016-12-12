@@ -31,21 +31,6 @@ h4 {
 	
 }
 
-.title {
-    font-family: 'Open Sans Condensed', sans-serif;
-     background-image: url(/Img/sq.png);
-}
-
-.contactPage {
-    background-image: url('/Img/bentley.png');
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 25%;
-    border: 2px solid black;
-    
-} 
-
 
 #contact-body {
     top: 0;
@@ -80,7 +65,8 @@ h4 {
 
 #contact {
     color: #f8f5ed;
-    background-image: url('/Img/bluePad.png');
+    background-color: #1c6778;
+    font-family: 'Lato', sans-serif;
 
     /*background-image: url(/Img/login2.png);*/
 }
@@ -105,7 +91,7 @@ h4 {
 
 
 .afsana-style, .afsana-form textarea {
-    background: transparent;
+    /*background: transparent;*/
     border-radius: 30px;
     border-top: 0px;
     border-left: 0px;
@@ -142,73 +128,9 @@ h4 {
     border-right: 2px solid #fff;
 }
 
-.facebook-box {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
 
-.facebook-box iframe {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
 
-.social-icons ul {
-    padding: 0;
-    margin: 6px 0 0;
-    text-align: center;
-}
 
-.social-icons ul li {
-    display: inline-block;
-    list-style: none;
-    height: 50px;
-    width: 50px;
-    margin: 0px 5px;
-    text-align: center;
-    border: 2px solid;
-    border-radius: 50%;
-    transition: 0.4s ease;
-}
 
-.social-icons ul li a {
-    font-size: 2em;
-    line-height: 0em;
-    display: inline-block;
-    padding: 11px 0px;
-    color: #fff;
-}
-
-.social-icons ul li a i {
-}
-
-.facebook {
-    background: #3b5998;
-    border-color: #3b5998 !important;
-}
-.twitter {
-    background: #00aced;
-    border-color: #00aced !important;
-}
-.googleplus {
-    background: #dd4b39;
-    border-color: #dd4b39 !important;
-}
-.github {
-    background: #999999;
-    border-color: #999999 !important;
-}
-.linkedin {
-    background: #007bb6;
-    border-color: #007bb6 !important;
-}
-.youtube {
-    background: #bb0000;
-    border-color: #bb0000 !important;
-}
-.social-icons ul li:hover {
-    background: transparent;
-}
 
 

@@ -83,7 +83,6 @@ div.desc {
 #head-canvas {
   position: absolute;
     top: 500;
-    /*top defines; the maps starting point*/
     left: 0;
     width: 100%;
     height:50%;
@@ -107,7 +106,7 @@ div.desc {
 }
 
 .footer {
-    margin-top: 90px;
+    margin-top: 0px;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -131,6 +130,7 @@ footer.ft-text {
     display: inline-block;
 }
  .col-md-3 {
+    position:relative;
     top: 5px;
     width: 35%;
     height: 255px;
@@ -143,7 +143,7 @@ footer.ft-text {
  }
 
  .col-md-6 {
-    /*position: relative;*/
+    position: relative;
     top: 5px;
     width: 30%;
     height: 255px;
