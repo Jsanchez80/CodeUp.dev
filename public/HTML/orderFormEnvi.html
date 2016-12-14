@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<title>home</title>
-		<link rel="stylesheet" type="text/css" href="/css/newLogin.css">
+		<link rel="stylesheet" type="text/css" href="/css/orderForm.css">
 		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Space+Mono" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
@@ -26,7 +26,7 @@
 		<nav  class="fixed-nav-bar">
   		<div class="container-fluid">
    			<div class="collapse navbar-collapse main-nav">
-   				<a class="navbar-brand" href="index.html#wrap">EVOQ</a>
+   				<a class="navbar-brand" href="index.html#wrap">ENVI Waterless Auto Spa</a>
    				
    				<ul class="nav navbar-nav navbar-right">
       			<li><a class="navbar-brand" href="#" data-toggle="modal" data-target="#login-modal">Schedule</h5></a><span class="hover-li"></span></li>
@@ -44,18 +44,25 @@
 		<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none; padding: 30px; font-family: 'Open Sans Condensed', sans-serif;">
     		<div class="modal-dialog">
 				<div class="loginmodal-container">
-					<h1>Schedule Your Wash</h1><br>
-				  <form method="POST" action="http://formspree.io/enviwaterless@gmail.com">
+					<h1>Schedule Your Wash</h1>
+					<hr class="rain">
+					<br>
+				<form method="POST" action="http://formspree.io/enviwaterless@gmail.com">
 				  	<h4>Contact Info</h4>
 					<input type="text" name="firstName" placeholder="First Name">
 					<input type="text" name="lastName" placeholder="Last Name">
 					<input type="text" name="email" placeholder="Email">
-					<input type="text" name="phone" placeholder="Phone Number (210) 111-1111">
-					<input type=text name="address" placeholder="Address">
+					<input type="number" name="phone" placeholder="Phone: (210) 111-1111">
+					<h4>Billing Address</h4>
+					<input type=text name="billingAddress" placeholder="Billing Address">
+					<input type="text" name="city" placeholder="City">
+					<input type="text" name="state" placeholder="State">
+					<input type="number" name="zipcode" placeholder="Zip Code">
 					<h4>Vehicle Info</h4>
 					<input type="text" name="make" placeholder="Vehicle Make">
 					<input type="text" name="model" placeholder="Vehicle Model">
 					<input type="text" name="color" placeholder="Color">
+					<input type="number" name="year" placeholder="Vehicle Year">
 					<h4>Vehicle Type</h4>
 					<select>
 						<option  name="coupe">Coupe</option>
@@ -69,7 +76,8 @@
 					<h4>Vehicle Location</h4>
 					<input type="text" name="address" placeholder="Street Address">
 					<input type="text" name="city" placeholder="City">
-					<input type="text" name="zip_code" placeholder="Zip Code">
+					<input type="text" name="state" placeholder="State">
+					<input type="number" name="zip_code" placeholder="Zip Code">
 					<h4>Select Your ENVI Service</h4>
 						<select>
 							<option  name="replenish">Replenish</option>
@@ -88,7 +96,7 @@
 					<input type="text" name="CVC" placeholder="CVC">
 					<input type="text" name="expiration" placeholder="Expiration">
 					<h4>Specific Requests/Comments:</h4>
-					<textarea rows="10" cols="40" placeholder="Provide any notes that will help us serve you best. For example, how to locate your vehicle, where to park, special requests. If we will have access to a power outlet, please indicate the location."></textarea>
+					<textarea rows="10" cols="75" placeholder="Provide any notes that will help us serve you best. For example, how to locate your vehicle, where to park, special requests. If we will have access to a power outlet, please indicate the location."></textarea>
 						
 					<br>
 					<br>
