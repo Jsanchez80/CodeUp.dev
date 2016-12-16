@@ -1,0 +1,103 @@
+<!doctype html>
+<html ng-app="todoApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="/Js/toDoList2.js"></script>
+    <link rel="stylesheet" href="/CSS/toDoList2.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+
+  </head>
+  <body>
+  <!-- Nav bar -->
+  <div class="fixed-nav-bar">
+  </div>
+  
+   <section class="top">
+  <div class="grocImage">
+  </div>
+  </section>
+
+
+
+  <!-- Start Row -->
+  <div class="container">
+  <div class="row">
+  <div class="col-4-md">
+    <div class="topper">
+  <!-- Employer info -->
+      <h2>Grocery Dept:</h2>
+    </div>
+    <div ng-controller="TodoListController as todoList">
+      
+      <form ng-submit="todoList.addTodo()">
+        <input type="text" ng-model="todoList.todoText"  size="30"
+               placeholder="Add A Grocery Item">
+        <input class="btn-primary" type="submit" value="add">
+      </form>
+
+      <ul class="unstyled">
+        <li ng-repeat="todo in todoList.todos">
+          <label class="checkbox">
+            <input type="checkbox" ng-model="todo.done">
+            <span class="done-{{todo.done}}">{{todo.text}}</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+    </div>
+  <!--Position Applied for:  -->
+  <div class="col-4-md">
+    <div class="topper">
+      <h2>Dairy Dept:</h2>
+    </div>
+    <div ng-controller="TodoListController as todoList">
+      <!-- add an item -->
+      <form ng-submit="todoList.addTodo()">
+        <input type="text" ng-model="todoList.todoText"  size="30"
+               placeholder="Add A Dairy Item">
+        <input class="btn-primary" type="submit" value="add">
+      </form>
+      <!-- listed item -->
+      <ul class="unstyled">
+        <li ng-repeat="todo in todoList.todos">
+          <label class="checkbox">
+            <input type="checkbox" ng-model="todo.done">
+            <span class="done-{{todo.done}}">{{todo.text}}</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+    <!-- Date Applied -->
+  <div class="col-4-md">
+    <div class="topper">
+      <h2>Market Dept:</h2>
+    </div>
+    <div ng-controller="TodoListController as todoList">
+      <form ng-submit="todoList.addTodo()">
+        <input type="num" ng-model="todoList.todoText"  size="30"
+               placeholder="Add A Market Item">
+        <input class="btn-primary" type="submit" value="add">
+      </form>
+      <ul class="unstyled">
+        <li ng-repeat="todo in todoList.todos">
+          <label class="checkbox">
+            <input type="checkbox" ng-model="todo.done">
+            <span class="done-{{todo.done}}">{{todo.text}}</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <!-- End Row -->
+    </div>
+    </div>
+
+    <!-- End Nav -->
+    </div>
+
+  </body>
+</html>

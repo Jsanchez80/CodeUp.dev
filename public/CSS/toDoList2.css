@@ -1,0 +1,75 @@
+
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    /*opacity: 0.5;
+    filter: alpha(opacity=50);*/
+    top: 0;
+    left: 0;
+    right: 0;       
+    
+
+}
+.done-true {
+  text-decoration: line-through;
+  color: salmon;
+}
+
+
+
+body {
+	background-image: url('/Img/sq.png');
+   	position: relative;
+    padding: 200px;
+    margin: 0px;
+    left: 0px	;
+ }
+
+ .grocImage {
+ 	position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    background-size: cover;s
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-image: url('/Img/groceryShop.png');
+ }
+
+.col-4-md {
+	position: relative;
+    top: 150px;
+    padding: 10px;
+    margin: 100px;
+    height: 255px;
+    background-color: #fffdd0;	
+    float: left;
+    color: black;
+    text-align: center;
+    -webkit-column-gap: 5px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 5px; /* Firefox */
+    column-gap: 5px;
+}
+
+.topper {
+	background-color: #4d4dff;
+	padding: 7px;
+	margin: -9px;
+	border-radius: 0px;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+}
+
+
+
+.unstyled {
+	text-align: left;
+	font-family: 'Raleway', sans-serif;
+}
