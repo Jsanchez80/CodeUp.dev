@@ -27,7 +27,7 @@ body {
    	position: relative;
     padding: 200px;
     margin: 0px;
-    left: 0px	;
+    left: 0px;
  }
 
  .grocImage {
@@ -43,12 +43,22 @@ body {
     background-image: url('/Img/groceryShop.png');
  }
 
+ .topper {
+	background-color: blue;
+	padding: 7px;
+	margin: -9px;
+	border-radius: 0px;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+}
+
 .col-4-md {
 	position: relative;
-    top: 150px;
+    top: 250px;
     padding: 10px;
-    margin: 100px;
+    margin: 30px;
     height: 255px;
+    border-radius: 5px;
     background-color: #fffdd0;	
     float: left;
     color: black;
@@ -58,14 +68,7 @@ body {
     column-gap: 5px;
 }
 
-.topper {
-	background-color: #4d4dff;
-	padding: 7px;
-	margin: -9px;
-	border-radius: 0px;
-	color: white;
-	font-family: 'Oswald', sans-serif;
-}
+
 
 
 
