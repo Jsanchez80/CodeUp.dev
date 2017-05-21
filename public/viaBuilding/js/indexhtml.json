@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "invertible-lens-141419",
+  "private_key_id": "db53ce03b2423378d594e015c8e45be41ef532ce",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCzHQpY6et7ozy7\nni6i2zFXkXQrXX3gXMk0fHZamas82lln4KlqboS+K7jE/elCKn25q4rmje7QWzMX\nwwrFF/bUGUvFmrsNKvsOaDZl5NWFRUilzF2mLlXZFKgGjAKtKAqTsI9Ro0ICCs8K\nB0893piHFl0QDFqOz2l3Orv/97gmiHII0z9EFksLtqXqME+fJwKeYhdoS90IiYry\nw0IBQdHfgYM2Zb8/CEn3CvCpOvxF4vzIjiPFdfAZjgbxKqySm1o9EO8GoNB3UM2H\nXfwk9FdqKRNpJG14Jhr7NsEP1OKk0oFPcT4ZmJQToRTImLhr/tXC/Sk5sX/vLK2k\nY++OdpaBAgMBAAECggEAFrjmaSUzxHmO6NZGYE6iUdOYAzBXGbFrrQblFNVNzeh9\nUxpDI8dle6KcTBFSGBy/2mASvPDgjPok3yzVHu/NVlbnL+hTNnZvZwJ9dCu1krSZ\nZL8qWjyik2l1b28vn7vmq5nIdLjbVNr+LO2EdfrZKroBkFmg22EgpgmDdBN+/xQ1\nl+0sM3en7OGbTMukVSioPBujGeEH5q1qAEkosFSu5y/2f2KXjy7ezeNfgEUCnc8Z\nEVBasZWWxUQ6wvFOEYwnc5J2i8VtjVOujlJoE8bvVbqC4ynig/WmHglQPrxJGT/a\nj5NSzMv1lWl/b1EDhbkDjcedM9aSPtl/bbs10yVuaQKBgQDs1onSlUni/h1MXySJ\nV8IeEvBU7Nv9GLuXO3NuUX/zx+PYVkwOtkm2PQuDKzWRhe1EFZoimS/pxcKMHUqt\nvPJqa/OSjPwKoVtizffGW9/VVoBXudZgDo9Hdh+KiMT8ejJ8HvGSZcnPWROiBivo\nCUE+6icD4jG8MqeZvYDpwk6WBwKBgQDBmuR8fWnUuvgex9xh74vktLV2sEVjq+ZR\nZJH/nGDGYwc68BQOdHhvPwLlKKbMZSJHzhFBlyw155Ac8HKIE5r9AQdfXMMXp/rW\n/J48/Cmoi7BZt2j5V1sG48LV9tGVE4COqPVYEbK8jrvbDkgF8Kwu/m18f5iz/TCT\n1VDmcNoNNwKBgQDIQlPBaxhRxpsRc7WaKElsUolC1hDhvqMIKm3dTy6I/HEtATNI\nkVxcqttsKwIdrYfFNRrivHLmEaECBtaZd5Xm5KbNOUb42h1Cu3QSFqd6Za0aAHpD\nOKxwOXJMGn+uGMlNaIDNUCJHoENYki1YA1NXFnis8Psq7g4HklRJ1FHMywKBgQCv\nUmkfIyM3dalDlpHITnlMvyilNrNfs0d65awg4afxf7QId2hyPp7hfxpMEygZaGxG\nwiF2WEO8/NnQmx3chISSIOBgR0yUm5XYIiPZ7jB7ZSRp2mHBio3wC0lhIYZhjauZ\nhP/IpR5LCqarlJ88YdpLJDRZzeKm+92FwmLki8WquQKBgGI7Jjfd8EQPco8fnHNu\nhmD+AVN1nEJ9Y+Py9EFBlB5OnHBgd90SxRitdY0SaFYeB4v6lnh6ah6lGzEhJ2MF\nYOuOZek1ZFukOYNo+z2qMiQMmwW8/yV2QUxy8Ijk3I+L5MHjj1baWSB/zlTd9cke\n6ZCSWh6hLO1gQMxW2rUTEME0\n-----END PRIVATE KEY-----\n",
+  "client_email": "evoqit@invertible-lens-141419.iam.gserviceaccount.com",
+  "client_id": "107246408925757407445",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/evoqit%40invertible-lens-141419.iam.gserviceaccount.com"
+}
