@@ -98,8 +98,8 @@ function showCustomerSale(person, purchased, discount){
 }
 	
 } 
-var result = (showCustomerSale ("zach", 205, 0.35));
-console.log(zach);
+var result = console.log(showCustomerSale ("zach", 205, 0.35));
+// (zach);
 
 console.log(showCustomerSale("Fernando", 210, .035))
 
