@@ -1,0 +1,79 @@
+body {
+	background-color: #5898bc;
+	/*margin-top: 400px;*/
+
+    	
+}
+
+.container {
+	background-color: #777;
+	padding: 10px;
+	padding-left: 10px;
+	border: solid 4px black;
+
+}
+
+#box {
+	border: solid 4px black;
+	margin-top: 20px;
+	padding: 20px;
+	width: 400px;
+	background-color: #ffffff;
+	font-family: 'Orbitron';
+}
+
+#box2 {
+	border: solid 4px black;
+	margin-top: 1px;
+	margin-left: 450px;
+	padding: 0px;
+	background-image: url('/Img/evolution.png');
+	width: auto;
+	padding-bottom: 507px;
+}
+
+.scrolling {
+	border: solid 4px black;
+	margin-top: 20px;
+	padding: 20px;
+	width: 300px;
+	background-color: #ffffff;
+	margin-top: -963.5px;
+	margin-left: 450px;
+	font-family: 'Orbitron';
+}
+
+#results {
+	background-color: #5898bc;
+	color: black;
+	width: auto;
+	border: solid 4px #5898bc;
+	border-radius: 10px;
+	height:60px;
+	font-family: 'Play';
+	font-size: 37px;
+
+}
+
+#results:hover {
+	background-color: black;
+	color: #ffffff;
+	border: solid 4px black;
+	
+	
+}
+
+h1 {
+    font-family: 'Orbitron';
+   }
+
+ol {
+    font-family: 'Play';
+   }
+
+
+
+
+
+
+

@@ -1,27 +1,31 @@
 "use strict"
-(function(){
-var total = 70 + 80 + 95 / 3;
-var message;
 
-if(total > 80) {
-	console.log ("You are awesome!");
-} else {
-	console.log ("You need more practice.");
-}
-// takes in 3 grades, calculates average, checks average vs passing
-function grades(grade1, grade2, grade3){
-	var averageGrade = grade1 + grade2 + grade3 / 3
+console.log("testing");
+
+
+// (function(){
+// var total = 70 + 80 + 95 / 3;
+// var message;
+
+// if(total > 80) {
+// 	console.log ("You are awesome!");
+// } else {
+// 	console.log ("You need more practice.");
+// }
+// // takes in 3 grades, calculates average, checks average vs passing
+// function grades(grade1, grade2, grade3){
+// 	var averageGrade = grade1 + grade2 + grade3 / 3
 	
-	if(averageGrade > 80) {
-		message = "You are awesome!";
-} else {
-		message = "You need more practice.";
-}
-	return message;
-}
+// 	if(averageGrade > 80) {
+// 		message = "You are awesome!";
+// } else {
+// 		message = "You need more practice.";
+// }
+// 	return message;
+// }
 
-console.log(averageGrade(75, 80, 95) / 3);
-console.log(averageGrade(95, 100, 100) / 3);
+// console.log(averageGrade(75, 80, 95) / 3);
+// console.log(averageGrade(95, 100, 100) / 3);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var person = "Cameron";
