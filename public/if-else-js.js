@@ -1,6 +1,7 @@
+
 "use strict"
 
-function (){
+
 
 console.log("testing");
 
@@ -117,4 +118,4 @@ function flipCoin() {
 	var flipCoin = math.floor(math.random() * 2);
 	return flipCoin;
 }
-})();
+}();
