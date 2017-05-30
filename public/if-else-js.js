@@ -118,4 +118,4 @@ function flipCoin() {
 	var flipCoin = math.floor(math.random() * 2);
 	return flipCoin;
 }
-}();
+();
