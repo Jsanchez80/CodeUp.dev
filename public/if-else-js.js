@@ -101,7 +101,7 @@ function showCustomerSale(person, purchased, discount){
 var result = console.log(showCustomerSale ("zach", 205, 0.35));
 // (zach);
 
-console.log(showCustomerSale("Fernando", 210, .035))
+console.log(showCustomerSale("Fernando", 210, .035));
 
 var flipCoin = math.floor(math.random() * 2);
 if(flipCoin == 0){
