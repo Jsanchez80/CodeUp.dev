@@ -109,9 +109,9 @@ if(flipCoin == 0){
 } else {
 	console.log("buy that house");
 }
-shouldBuyHouseOrCar();
-shouldBuyHouseOrCar();
-shouldBuyHouseOrCar();
+// shouldBuyHouseOrCar();
+// shouldBuyHouseOrCar();
+// shouldBuyHouseOrCar();
 
 
 function flipCoin() {
