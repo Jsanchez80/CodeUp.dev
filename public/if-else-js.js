@@ -5,6 +5,9 @@
 
 console.log("testing");
 
+function sum(5,3){
+	return a + b;
+}
 
 // (function(){
 // var total = 70 + 80 + 95 / 3;
