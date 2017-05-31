@@ -1,13 +1,18 @@
 
-"use strict"
+'use strict';
+
+(function (){
+
 
 
 
 console.log("testing");
 
-function sum(5,3){
-	return a + b;
+function sum(a, b){
+	return 20 + 10;
 }
+
+console.log(sum());
 
 // (function(){
 // var total = 70 + 80 + 95 / 3;
@@ -121,4 +126,4 @@ function flipCoin() {
 	var flipCoin = Math.floor(Math.random() * 2);
 	return flipCoin;
 }
-// ();
+})();
