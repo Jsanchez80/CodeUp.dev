@@ -103,7 +103,7 @@ var result = console.log(showCustomerSale ("zach", 205, 0.35));
 
 console.log(showCustomerSale("Fernando", 210, .035));
 
-var flipCoin = math.floor(math.random() * 2);
+var flipCoin = Math.floor(Math.random() * 2);
 if(flipCoin == 0){
 	console.log("buy a car");
 } else {
@@ -115,7 +115,7 @@ shouldBuyHouseOrCar();
 
 
 function flipCoin() {
-	var flipCoin = math.floor(math.random() * 2);
+	var flipCoin = Math.floor(Math.random() * 2);
 	return flipCoin;
 }
 // ();
