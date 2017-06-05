@@ -87,9 +87,11 @@ $acceptableDiagnosis = [
 	</div>
 	
     <!-- Acceptable diagnosis' -->
+    <!-- The array of diagnosis is being looked at, searched through and then being displayed on the front end view.  How do I perform this function onclick -->
     <section>
     <div id="box">
 	    <h1>Our acceptable diagnosis' are: </h1>
+	    <button id="btn-1" > Search </button>
 		    <ol>
 		    <?php foreach ($acceptableDiagnosis as $diagnosis) { ?>
 		        <li><?php echo $diagnosis; ?></li>

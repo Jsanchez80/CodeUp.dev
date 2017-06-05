@@ -4,13 +4,117 @@
 	<title>Questionnaire</title>
 	<link href="https://fonts.googleapis.com/css?family=Exo+2|Shadows+Into+Light" rel="stylesheet">
 	<script src="/Js/newIterating.js"></script>
-	
+	<style>
+
+		.topnav {
+			overflow: hidden;
+			background-color: #1abc9c;
+		}
+
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+
+		.topnav a:hover {
+			background-color: #f4f7f8;
+			color: black;
+		}
+
+		.topnav a.active {
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		body {
+			background-color: #5898bc;
+		}
+
+		.questionnaire {
+		   	max-width: 500px;
+		    padding: 10px 20px;
+		    background: #f4f7f8;
+		    margin: 10px auto;
+		    padding: 20px;
+		    background: #f4f7f8;
+		    border-radius: 8px;;
+		}
+
+		.info {
+		    position: relative;
+		    display: block;
+		    padding: 19px 39px 18px 39px;
+		    color: #FFF;
+		    margin: 0 auto;
+		    background: #1abc9c;
+		    font-size: 18px;
+		    font-family: 'Lato', sans-serif;
+		    text-align: left;
+		    font-style: normal;
+		    border: 1px solid #16a085;
+		    border-width: 1px 1px 3px;
+		    margin-bottom: 10px;
+		    max-width: 460px;
+		}
+
+		p {
+		  	font-family: 'Lato', sans-serif;
+		}
+
+
+		.btn {
+		  	position: relative;
+		    display: block;
+		    padding: 19px 39px 18px 39px;
+		    color: #FFF;
+		    margin: 0 auto;
+		    background: #1abc9c;
+		    font-size: 18px;
+		    text-align: center;
+		    font-style: normal;
+		    width: 100%;
+		    border: 1px solid #16a085;
+		    border-width: 1px 1px 3px;
+		    margin-bottom: 10px;
+		}
+
+	</style>
 	</head>
 		<body>
+		<!-- Navbar -->
+			<div class="topnav" id="myTopnav">
+				<a href="#home">Home</a>
+				<a href="#news">News</a>
+				<a href="#contact">Contact</a>
+				<a href="#about">About</a>
+			</div>
+
+
 		<p>Testing some JavaScript...check out the console.</p>
+
+		<!-- Info Section -->
+		<div>
+			<h3 class="info">To better understand how we may serve you, please help us with some basic information.  This information will not be saved nor will it ever be sold.  We need this info to point you i the right direction should Clubhouse not be a good fit at this time.</h3>
+		</div>
 		
-		 <section class="homeLike">
-			
-		</section>
+		<!-- Beginning Questionnaire -->
+		<form class="questionnaire">
+		  <h3>How old are you:</h3>
+		  <input type="text" name="age" placeholder="age">
+		  <br>
+		  <h3>What gender do you identify with?</h3>
+		  <input type="radio" name="gender" value="male" checked> Male<br>
+		  <input type="radio" name="gender" value="female"> Female<br>
+		  <input type="radio" name="gender" value="other"> Other<br>
+		  <h4>Continue by clicking the Submit button...</h4>
+		  <button class="btn" type="submit" onclick="ageGender(self)">Submit</button>
+		</form>
+		
+
 		</body>
 	</html>

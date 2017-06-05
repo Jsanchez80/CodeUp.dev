@@ -1,6 +1,11 @@
 <?php
 
-$name = 'Jake';
+// $gender = ();
+// $genderM = 'Male';
+// $genderF = 'Female';
+// $genderO = 'Other';
+
+$name = 'Linda';
 
 $diagnosedIllness = [
 	  'Schizophrenia',
@@ -39,7 +44,7 @@ $diagnosedIllness = [
       'Other Specified Trauma-and Stressor-Related Disorder',
       'Unspecified Trauma-and Stressor-Related Disorder'];
 
-      $query = 'Obsessive-Compulsive Disorder';
+      $query = 'Adjustment Disorders';
       $result = array_search($query, $diagnosedIllness);
       if ($result) {
       	// echo $diagnosedIllness[$result];
@@ -67,6 +72,9 @@ $diagnosedIllness = [
 	<head>
 	<title>DIAGNOSIS</title>
 	<link href="https://fonts.googleapis.com/css?family=Exo+2|Shadows+Into+Light" rel="stylesheet">
+	<script>
+		
+	</script>
 	<style> 
 		input[type=text] {
 		    width: 130px;
@@ -86,6 +94,13 @@ $diagnosedIllness = [
 		input[type=text]:focus {
 		    width: 40%;
 		}
+
+		.homeLike {
+			background-color: #5898bc;
+			margin-left: -7px;
+			margin-right: -7px;
+			padding-left: 10px;
+		}
 		</style>
 	</head>
 		<body>
@@ -103,6 +118,28 @@ $diagnosedIllness = [
 			
 
 		</div>
+		 <section class="homeLike">
+		<form action="/">
+			<!-- Gender Identity Validation of Form -->
+			<p style="font-family: 'Shadows Into Light', cursive; font-size: 25px;">What gender do you identify with?</p>
+			<input type="radio" name="gender" class="color" value="0">Male</input> <!--Male!-->
+			<br>
+			<input type="radio" name="gender" class="color" value="1">Female</input> <!--Female!-->
+			<br>
+			<input type="radio" name="gender" class="color" value="2">Other</input> <!--Other!-->
+			<br>
+			
 
+			<!-- Age Validation of Form -->
+			<p style="font-family: 'Shadows Into Light', cursive; font-size: 25px;">Are you 18 years old or older?</p>
+			<input type="radio" name="age" class="color" value="3">Yes</input> <!--Yes, I'm 18 or older!-->
+			<br>
+			<input type="radio" name="age" class="color" value="4">No</input> <!--No, I'm not 18 or oler!-->
+			<br>
+			<input type="submit" name="genderSubmit" class="color" value="Submit"></input>
+			<br>
+			<br>
+		</form>
+		</section>
 		</body>
 	</html>
