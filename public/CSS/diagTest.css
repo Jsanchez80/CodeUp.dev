@@ -1,0 +1,36 @@
+#box:hover {
+/*   background-position: right center;
+  border-left: 3px solid gray;
+  border-bottom: 3px solid gray; */
+  
+/*   color: rgba(255, 255, 255, 1); */
+  box-shadow: 0 1px 7px gray;
+}
+
+#box {
+/*     margin: 100px; */
+    margin: 360px;
+    margin-top: -100px;
+    width: 130px;
+    box-sizing: border-box;
+    border-left: 1.80px solid #5898bc;
+    border-right:  1px solid #5898bc;
+    border-top: 1px solid #5898bc;
+    border-bottom: 1.80px solid #5898bc;
+    border-radius: 1px solid #5898bc;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    width: 50%;
+/*     -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; */
+}
+
+/* input[type=text]:focus {
+    width: 50%; */
+}
+
+
