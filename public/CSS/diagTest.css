@@ -33,20 +33,20 @@
     width: 50%; */
 }
 
-.testBtn {
-  color: #ffffff;
+.button {
+  color: #5898bc;
   background-color: #0a0000;
   border: solid #0a0000;
-  border-radius: 3px;
-  margin-top: 10px;
-  height: 10px;
+  padding-left: 500px;
+
+  
   
 }
 
-.testBtn:hover {
+.button:hover {
   background-color: #FA8072;
   border: solid #FA8072;
   
-}
+}*/
 
 
