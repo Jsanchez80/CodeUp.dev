@@ -9,6 +9,7 @@
 
 #box {
 /*     margin: 100px; */
+    font-family: 'Lato', sans-serif;
     margin: 360px;
     margin-top: 10px;
     width: 130px;
@@ -27,26 +28,40 @@
     width: 50%;
 /*     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out; */
-}
+/*}*/
 
 /* input[type=text]:focus {
     width: 50%; */
 }
 
-.button {
-  color: #5898bc;
-  background-color: #0a0000;
-  border: solid #0a0000;
-  padding-left: 500px;
+#testBtn {
+    font-family: 'Lato', sans-serif;
+    margin-left: 360px;
+    margin-top: -370px;
+    width: 130px;
+    box-sizing: border-box;
+    border-left: 1.80px solid #001a33;
+    border-right:  1px solid #001a33;
+    border-top: 1px solid #001a33;
+    border-bottom: 1.80px solid #001a33;
+    border-radius: 1px solid #001a33;
+    font-size: 16px;
+    background-color: #0059b3;
+    color: white;
+    /*background-image: url('searchicon.png');*/
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px;
+    width: 175px;
 
   
   
 }
 
-.button:hover {
-  background-color: #FA8072;
-  border: solid #FA8072;
+#testBtn:hover {
+   box-shadow: 0 3px 7px #5898bc;
+   font-family: 'Lato', sans-serif;
   
-}*/
+}
 
 
