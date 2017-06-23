@@ -421,11 +421,21 @@ var soughtDiagnosis = [
     },
 ];
 
+// Auto Complete for the website:
+   
+   // var btnTest = document.getElementById('testBtn');
+   //  btnTest.addEventListener('click', function (e) {
+   //      // the event is defined above as 'e' so event.preventDefault() needs to be e.preventDefault()
+   //      e.preventDefault();
+    
+
+   var searchBox = document.getElementById('box').value;
+        console.log(searchBox);
+    // });
 
 
-
-console.log("Your diagnosis is " + soughtDiagnosis[0].diagnosis + " Some of the symptoms include  " + soughtDiagnosis[0].symptoms + ".");
-console.log("Discover the following resources to learn more " + soughtDiagnosis[0].organization.name + soughtDiagnosis[0].organization.streetAddress + soughtDiagnosis[0].organization.city + soughtDiagnosis[0].organization.state + soughtDiagnosis[0].organization.zip);
+// console.log("Your diagnosis is " + soughtDiagnosis[0].diagnosis + " Some of the symptoms include  " + soughtDiagnosis[0].symptoms + ".");
+// console.log("Discover the following resources to learn more " + soughtDiagnosis[0].organization.name + soughtDiagnosis[0].organization.streetAddress + soughtDiagnosis[0].organization.city + soughtDiagnosis[0].organization.state + soughtDiagnosis[0].organization.zip);
 // console.log("Your diagnosis is " + soughtDiagnosis[1].diagnosis + " Some of the symptoms include  " + soughtDiagnosis[0].symptoms + ".");
 // console.log("Discover the following resources to learn more " + soughtDiagnosis[1].organization.name + soughtDiagnosis[1].organization.streetAddress + soughtDiagnosis[1].organization.city + soughtDiagnosis[1].organization.state + soughtDiagnosis[1].organization.zip);
 
