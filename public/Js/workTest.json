@@ -1,64 +1,78 @@
 [
     {
-        "title": "Hammer",
-        "quantity": 25,
-        "categories": [
-            "tool"
-        ],
-        "price": 20
+        "subcategories": "Subcategory",
+        "diagnosis": "Schizoprenia:",
+        "organization": "SA Clubhouse ",
+        "streetAddress": "1234 Citizen's Pkwy, ",
+        "city": "San Antonio, ", 
+        "state": "TX",
+        "zip": "78229",
+        "phone": "(210) 798-1619"
+}, 
+
+    {
+
+       "subcategories": "Subcategory",
+        "diagnosis": "Schizoprenia:",
+        "organization": "SA Clubhouse ",
+        "streetAddress": "1234 Citizen's Pkwy, ",
+        "city": "San Antonio, ", 
+        "state": "TX",
+        "zip": "78229",
+        "phone": "(210) 798-1619"
     }, {
-        "title": "Drill",
-        "quantity": 5,
-        "categories": [
-            "tool",
-            "powered"
-        ],
-        "price": 100
+        "subcategories": "Subcategory",
+        "diagnosis": "Schizoprenia:",
+        "organization": "SA Clubhouse ",
+        "streetAddress": "1234 Citizen's Pkwy, ",
+        "city": "San Antonio, ", 
+        "state": "TX",
+        "zip": "78229",
+        "phone": "(210) 798-1619"
     }, {
-        "title": "Mower",
-        "quantity": 5,
-        "categories": [
-            "tool",
-            "gas",
-            "outdoor"
-        ],
-        "price": 200
+        "subcategories": "Subcategory",
+        "diagnosis": "Schizoprenia:",
+        "organization": "SA Clubhouse ",
+        "streetAddress": "1234 Citizen's Pkwy, ",
+        "city": "San Antonio, ", 
+        "state": "TX",
+        "zip": "78229",
+        "phone": "(210) 798-1619"
     }, {
-        "title": "Screwdrivers",
-        "quantity": 25,
-        "categories": [
-            "tool"
-        ],
-        "price": 10
+        "subcategories": "Subcategory",
+        "diagnosis": "Schizoprenia:",
+        "organization": "SA Clubhouse ",
+        "streetAddress": "1234 Citizen's Pkwy, ",
+        "city": "San Antonio, ", 
+        "state": "TX",
+        "zip": "78229",
+        "phone": "(210) 798-1619"
     }, {
-        "title": "Jack Hammer",
-        "quantity": 15,
-        "categories": [
-            "tool",
-            "automotive"
-        ],
-        "price": 20
+        "subcategories": "Subcategory",
+        "diagnosis": "Schizoprenia:",
+        "organization": "SA Clubhouse ",
+        "streetAddress": "1234 Citizen's Pkwy, ",
+        "city": "San Antonio, ", 
+        "state": "TX",
+        "zip": "78229",
+        "phone": "(210) 798-1619"
     }, {
-        "title": "Wrench",
-        "quantity": 4,
-        "categories": [
-            "tool"
-        ],
-        "price": 11
+        "subcategories": "Subcategory",
+        "diagnosis": "Schizoprenia:",
+        "organization": "SA Clubhouse ",
+        "streetAddress": "1234 Citizen's Pkwy, ",
+        "city": "San Antonio, ", 
+        "state": "TX",
+        "zip": "78229",
+        "phone": "(210) 798-1619"
     }, {
-        "title": "Flashlight",
-        "quantity": 25,
-        "categories": [
-            "tool"
-        ],
-        "price": 2
-    }, {
-        "title": "Tie Downs",
-        "quantity": 50,
-        "categories": [
-            "tool",
-            "automotive"
-        ],
-        "price": 13
+        "subcategories": "Subcategory",
+        "diagnosis": "Schizoprenia:",
+        "organization": "SA Clubhouse ",
+        "streetAddress": "1234 Citizen's Pkwy, ",
+        "city": "San Antonio, ", 
+        "state": "TX",
+        "zip": "78229",
+        "phone": "(210) 798-1619"
     }
 ]
