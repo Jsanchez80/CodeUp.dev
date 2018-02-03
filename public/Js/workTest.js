@@ -90,6 +90,7 @@ console.log('hello');
 // '{"firstName":"Peter","lastName":"Jones" }]}';
 
 // Click Event Listener for button testing
+var greeting = "this didn't work!"
 var btnTest = document.getElementById('testBtn');
     btnTest.addEventListener('click', function (e) {
         // the event is defined above as 'e' so event.preventDefault() needs to be e.preventDefault()
@@ -105,6 +106,10 @@ if (diagnosis == schizoprenia){
         obj.diagTest[1].subcategories + " " + obj.diagTest[1].organization;
         console.log(obj.diagTest[1].subcategories + obj.diagTest[1].organization);
 } else {
-    alert('Please try again!');
-}
+	greeting = "maybe you should try again";
+	}
+	document.getElementById("demo").innerHTML = greeting;
+});
+
+
 

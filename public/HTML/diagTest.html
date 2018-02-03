@@ -1,16 +1,14 @@
 <!DOCTYPE>
 	<html lang="en">
 		<head>
+			
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<title>Diagnosis Testing</title>
-			<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">			
-			<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+			<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">	
+			<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">		
 			<link rel="stylesheet" type="text/css" href="/CSS/diagTest.css">
 			<script src="/Js/diagTest.js"></script>
-			 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
 		</head>
 		<body>
 		
@@ -19,11 +17,27 @@
 
 		<!-- Serach Box for the website.  -->
 		<form id="formula">
-  			<input id="box" type="text" name="search" placeholder="Search..">
+  			<input id="searchField" type="text" name="searchField" placeholder="Search..">
+  			<!-- Questionnaire to be filled out by potentials -->
+		  	<span id="questionnaire">
+		  	<h3>Do you have a history of serious mental illness?</h3>
+					<input id="question1" type="radio" name="question1" value="yes"> Yes<br>
+					<input type="radio" name="question1" value="no"> No<br>
+					
+		      	<h4>Continue by clicking the Submit button...</h4>	
+		     </span>
 		</form>
 
+
+
 		<!-- Button for Search Box -->
-		 <button id="testBtn" class="btnTest" value="submit" >Search</button>
+		 <button id="searchBtn" class="btnTest" value="submit">Search</button>
+
+		<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 		</body>
+		<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+		<!-- <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
 	</html>

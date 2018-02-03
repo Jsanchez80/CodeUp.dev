@@ -1,0 +1,63 @@
+[
+    {
+        "subcategories": "Obsessive-Compulsive and Related Disorders",
+        "diagnosis": "Obsessive Compulsive Disorder",
+        "organization": "SA Clubhouse ",
+        "streetAddress": "1234 Citizen's Pkwy, ",
+        "city": "San Antonio, ", 
+        "state": "TX",
+        "zip": "78229",
+        "phone": "(210) 798-1619",
+        "website": "http://www.SAClubhouse.org"
+    }, {
+       "subcategories": "Obsessive-Compulsive and Related Disorders",
+        "diagnosis": "Hoarding Disorder",
+        "organization": "Alamo Elite Wellness ",
+        "streetAddress": "4242 Woodcock Ste 201, ",
+        "city": "San Antonio, ", 
+        "state": "TX",
+        "zip": "78228",
+        "phone": "(210) 625-7974",
+        "website": "http://www.MymentalHealthMatters.com/"
+    }, {
+        "subcategories": "Obsessive-Compulsive and Related Disorders",
+        "diagnosis": "Trichotillomania (Hair-Pulling Disorder)",
+        "organization": "SA Clubhouse ",
+        "streetAddress": "1234 Citizen's Pkwy, ",
+        "city": "San Antonio, ", 
+        "state": "TX",
+        "zip": "78229",
+        "phone": "(210) 798-1619",
+        "website": "http://www.mymentalhealthmatters.com/"
+    }, {
+        "subcategories": "Obsessive-Compulsive and Related Disorders",
+        "diagnosis": "Excoriation (Skin-Picking Disorder)",
+        "organization": "SA Clubhouse ",
+        "streetAddress": "1234 Citizen's Pkwy, ",
+        "city": "San Antonio, ", 
+        "state": "TX",
+        "zip": "78229",
+        "phone": "(210) 798-1619",
+        "website": "http://www.mymentalhealthmatters.com/"
+    }, {
+        "subcategories": "Obsessive-Compulsive and Related Disorders",
+        "diagnosis": "Othe Specified Obsessive-Compulsive and Related Disorder",
+        "organization": "SA Clubhouse ",
+        "streetAddress": "1234 Citizen's Pkwy, ",
+        "city": "San Antonio, ", 
+        "state": "TX",
+        "zip": "78229",
+        "phone": "(210) 798-1619",
+        "website": "http://www.mymentalhealthmatters.com/"
+    }, {
+        "subcategories": "Obsessive-Compulsive and Related Disorders",
+        "diagnosis": "Unspecified Obsessive-Compulsive and Related Disorders",
+        "organization": "SA Clubhouse ",
+        "streetAddress": "1234 Citizen's Pkwy, ",
+        "city": "San Antonio, ", 
+        "state": "TX",
+        "zip": "78229",
+        "phone": "(210) 798-1619",
+        "website": "http://www.mymentalhealthmatters.com/"
+    }
+]

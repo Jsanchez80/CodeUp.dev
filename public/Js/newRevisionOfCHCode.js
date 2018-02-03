@@ -50,7 +50,7 @@
 			console.log('Im ' + gender + ' and ' + age + ' years old.');
 			window.location.replace('https://youtu.be/TnpTcrtsN3U');
 		} else {
-			window.location.replace('https://youtu.be/H5Vzo-iPGCo');
+			return ('https://youtu.be/H5Vzo-iPGCo');
 		}
 
 	};

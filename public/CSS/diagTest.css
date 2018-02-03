@@ -1,4 +1,4 @@
-#box:hover {
+#searchField:hover {
 /*   background-position: right center;
   border-left: 3px solid gray;
   border-bottom: 3px solid gray; */
@@ -7,7 +7,7 @@
   box-shadow: 0 1px 7px gray;
 }
 
-#box {
+#searchField {
 /*     margin: 100px; */
     font-family: 'Lato', sans-serif;
     margin: 360px;
@@ -34,7 +34,16 @@
     width: 50%; */
 }
 
-#testBtn {
+.questionnaire {
+    max-width: 500px;
+    padding: 10px 20px;
+    background: #f4f6f8;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#searchBtn {
     font-family: 'Lato', sans-serif;
     margin-left: 360px;
     margin-top: -370px;
